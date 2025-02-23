@@ -1,4 +1,26 @@
 @media (max-width: 1200px) {
+  .h1-small {
+    letter-spacing: 1.6px;
+    font-size: 4rem;
+    line-height: 4.6rem;
+  }
+  .heading-3 {
+    font-size: 3.1rem;
+    margin-bottom: 25px;
+  }
+  .h1-large {
+    font-size: 6.3rem;
+    line-height: 6.3rem;
+  }
+
+  .heading-4 {
+    font-size: 2.7rem;
+  }
+  .heading-2 {
+    font-size: 3.9rem;
+    line-height: 4.3rem;
+  }
+  /* --------------------------------- */
   .header-flexbox {
     width: 92%;
     margin: 0 auto;
@@ -33,26 +55,56 @@
     font-size: 1.8rem;
     letter-spacing: 1px;
   }
-  .h1-small {
-    letter-spacing: 1.6px;
-    font-size: 4rem;
-    line-height: 4.6rem;
-  }
-  .heading-3 {
-    font-size: 3.1rem;
-    margin-bottom: 25px;
-  }
 
   .services-section-slide-content p {
     font-size: 1.6rem;
   }
-  .h1-large {
-    font-size: 6.3rem;
-    line-height: 6.3rem;
+
+  /*-------------- Contact Page --------------*/
+  /*------- Terms, Privacy, Client Safety Notice Page-------- */
+  .term-text-section {
+    margin: 0 auto;
+  }
+  /* ---------------- Cars Page --------------- */
+  .gallery-collection {
+    grid-column-gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* --------------ALL Services Page-------------- */
+  .featured-services-section-grid-item div h6 {
+    font-size: 2.1rem;
   }
 }
 
 @media (max-width: 1024px) {
+  .heading-3 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+  }
+
+  .h1-large {
+    font-size: 6.1rem;
+    line-height: 6.3rem;
+  }
+  .heading-5 {
+    font-size: 2.4rem;
+  }
+  .heading-5 {
+    font-size: 2.4rem;
+    margin-bottom: 32px;
+  }
+  .h1-small {
+    letter-spacing: 1.5px;
+    font-size: 3.4rem;
+    line-height: 4rem;
+  }
+  .heading-2 {
+    font-size: 3.3rem;
+    line-height: 3.7rem;
+  }
+
+  /* ---------------------------------------- */
   .hero-section {
     height: 520px;
   }
@@ -67,10 +119,14 @@
     font-size: 1.7rem;
     letter-spacing: 1px;
   }
-  .h1-small {
-    letter-spacing: 1.5px;
-    font-size: 3.4rem;
-    line-height: 4rem;
+  .hero-fg-img {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.01) 10%,
+      rgba(31, 31, 31, 0.2) 79%,
+      rgba(0, 0, 0, 1) 94%
+    );
   }
   .cta-btn > a {
     font-size: 1.5rem;
@@ -80,20 +136,26 @@
     padding: 8px 9px;
     font-size: 1.5rem;
   }
+  .brands-section-flex {
+    grid-column-gap: 10px;
+  }
+
   .brands-section-flex-item {
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 0;
     grid-row-gap: 20px;
-    padding: 40px 13px 40px 13px;
+    padding: 30px 15px 30px 15px;
   }
   .brands-section-flex-item div {
     align-items: center;
   }
   .brands-section-flex-item img {
-    width: 56%;
-    height: 80px;
+    width: 130px;
+    height: 60px;
   }
-
+  .brands-section-flex-item div span {
+    text-align: center;
+  }
   .brands-section-flex-item h5 {
     font-size: 1.7rem;
   }
@@ -103,15 +165,7 @@
   .chauffeuring-section-flex {
     grid-column-gap: 40px;
   }
-  .heading-3 {
-    font-size: 3rem;
-    margin-bottom: 25px;
-  }
 
-  .h1-large {
-    font-size: 6.1rem;
-    line-height: 6.3rem;
-  }
   .services-section-slide-content-solutions div {
     padding: 18px 18px;
   }
@@ -140,9 +194,7 @@
   .call-us-at-section-right h6 {
     font-size: 1.5rem;
   }
-  .heading-5 {
-    font-size: 2.4rem;
-  }
+
   .cover-area-section-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
@@ -161,10 +213,7 @@
   .steps-section {
     padding: 60px 0;
   }
-  .heading-5 {
-    font-size: 2.4rem;
-    margin-bottom: 32px;
-  }
+
   .social-media-section-grid-flex-item img {
     width: 40px;
   }
@@ -178,16 +227,138 @@
   .social-media-section-grid-flex-item div {
     height: 230px;
   }
-  /* ----------------------------------- */
+  /* ------- Contact page -------- */
   .contact-section-grid {
     grid-template-columns: 1fr;
     grid-row-gap: 40px;
   }
   .contact-section {
-    margin: 120px auto;
+    margin: 0 auto;
+  }
+  /*------- Terms, Privacy, Client Safety Notice Page-------- */
+  /*------------- Cars Page------------------ */
+  .top-section-cars > div > img {
+    height: 370px;
+  }
+
+  .overlay .gallery-collection-card-carName > h5 {
+    transform: translateX(0);
+    font-size: 1.7rem;
+  }
+  .gallery-collection-card-carDes {
+    font-size: 1.4rem;
+  }
+  .gallery-collection-card-carDes i {
+    font-size: 1.6rem;
+  }
+  .gallery-collection-card-btns button a {
+    padding: 7px 17px;
+    font-size: 1.3rem;
+  }
+  .overlay .gallery-collection-card-carName > span {
+    width: 30px;
+    height: 30px;
+    font-size: 1.5rem;
+  }
+  /*--------------  Chauffeurs Page --------------- */
+  .our-chauffeurs-section-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0;
+  }
+  /* ---------------- About Page ------------------ */
+  .text-half-section-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0;
+  }
+  .text-half-section-grid-left {
+    padding: 30px 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .text-half-section-grid-right img {
+    width: 100%;
+    aspect-ratio: 3/1.35;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  /* --------------RL Split Section--------------- */
+  .RL-split-section-grid-left > div > div span {
+    font-size: 1.6rem;
+  }
+  /* -------------All Services Section Page-------------- */
+  .featured-services-section-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 35px;
+  }
+  .featured-services-section-grid-item div h6 {
+    font-size: 2rem;
+  }
+  .featured-services-section-grid-item p {
+    font-size: 1.45rem;
+    line-height: 20px;
+    padding: 5px 5px 5px 10px;
+  }
+  /* ----------Airport Chauffeur Page----------- */
+  .extra-services-section-grid {
+    display: flex;
+    flex-direction: column;
+    grid-column-gap: 0;
+  }
+  .extra-services-section-grid-left {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+  .extra-services-section-grid-right img {
+    display: none;
+  }
+  .extra-services-section-grid-left div {
+    border-radius: 0;
+    padding: 25px;
+  }
+  .extra-services-section-grid-left div h5 {
+    font-size: 1.8rem;
+  }
+  /*------------ All Cars Section------------ */
+  .car-features-section-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
   }
 }
 @media (max-width: 786px) {
+  .heading-3 {
+    font-size: 2.6rem;
+    margin-bottom: 21px;
+  }
+  .heading-3::after {
+    top: 105%;
+  }
+  .h1-large {
+    font-size: 5.1rem;
+    line-height: 5.3rem;
+  }
+  .heading-5 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+  .h1-small {
+    letter-spacing: 1.5px;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+  .heading-4 {
+    font-size: 2.5rem;
+  }
+  .heading-2 {
+    font-size: 3.6rem;
+    line-height: 4rem;
+  }
+
+  /* ------------------------------------ */
   .hero-section {
     height: 450px;
     margin-top: 0;
@@ -199,11 +370,7 @@
   .hero-section-text p {
     font-size: 1.6rem;
   }
-  .h1-small {
-    letter-spacing: 1.5px;
-    font-size: 3.2rem;
-    line-height: 3.8rem;
-  }
+
   .cta-btn > a {
     font-size: 1.4rem;
     padding: 7px 23px;
@@ -230,17 +397,7 @@
     font-size: 1.6rem;
     line-height: 2.5rem;
   }
-  .heading-3 {
-    font-size: 2.7rem;
-    margin-bottom: 21px;
-  }
-  .heading-3::after {
-    top: 105%;
-  }
-  .h1-large {
-    font-size: 5.1rem;
-    line-height: 5.3rem;
-  }
+
   .services-section-slide-content p {
     font-size: 1.5rem;
     line-height: 20px;
@@ -302,10 +459,7 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .heading-5 {
-    font-size: 2.2rem;
-    margin-bottom: 30px;
-  }
+
   .values-section {
     margin: 120px auto;
   }
@@ -378,7 +532,52 @@
     line-height: 23px;
     margin-top: 5px;
   }
+  /* -------------- Contact Page----------------- */
+  .top-section div > span {
+    font-size: 1.3rem;
+  }
 
+  .top-section > div > img {
+    height: 40vh;
+  }
+  .contact-section > p {
+    margin: 5px 0 40px 0;
+    color: var(--white-clr);
+    font-size: 1.4rem;
+  }
+  /*------- Terms, Privacy, Client Safety Notice Page-------- */
+  .term-text-section h3 {
+    font-size: 2.2rem;
+    letter-spacing: 0.1px;
+    text-align: left;
+  }
+  .term-text-section h4 {
+    font-size: 1.9rem;
+    letter-spacing: 0.1px;
+    text-align: left;
+  }
+  .term-text-section p {
+    font-size: 1.5rem;
+    line-height: 23px;
+  }
+  .term-text-section div b {
+    font-size: 1.6rem;
+  }
+  .term-text-section ol li b,
+  .term-text-section ul li b {
+    font-size: 1.75rem;
+  }
+  /* ---------------- Cars Page --------------- */
+  .gallery-collection {
+    grid-column-gap: 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gallery-collection-card img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  /* -------------------------------------------- */
   .RL-split-section-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -389,7 +588,6 @@
   .RL-split-section-grid-left {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    background-image: url("../assets/6.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -419,18 +617,119 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 30, 10, 0.65);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 10%,
+      rgba(31, 31, 31, 0.4) 29%,
+      rgba(0, 0, 0, 1) 94%
+    );
   }
   .RL-split-section-grid-left p {
     margin: 15px 0 25px 0;
   }
+  .RL-split-section-grid-left div > div > p {
+    line-height: 23px;
+    font-size: 1.5rem;
+    margin: 15px 0 25px 0;
+  }
+  .RL-split-section-grid-left p span {
+    display: none;
+  }
+  .cta-btn-style-3 a {
+    font-size: 1.3rem;
+    padding: 7px 20px;
+    column-gap: 15px;
+  }
+  .cta-btn-style-3 a i {
+    background-color: var(--white-clr);
+    border-radius: 50%;
+    padding: 6px 7px;
+    color: var(--dark-black);
+    font-size: 1.25rem;
+  }
+  .RL-split-section-grid-left-business {
+    background-image: url("../assets/pics/47.jpg");
+  }
+  .RL-split-section-grid-left-event {
+    background-image: url("../assets/pics/46.webp");
+  }
+  .RL-split-section-grid-left-personal {
+    background-image: url("../assets/pics/60.jpg");
+  }
+  .RL-split-section-grid-left-airport {
+    background-image: url("../assets/pics/40.jpg");
+  }
+  .RL-split-section-grid-left-about {
+    background-image: url("../assets/pics/48.jpg");
+  }
+  .RL-split-section-grid-left-chauffeurs {
+    background-image: url("../assets/pics/62.jpg");
+  }
 
-  .contact-section {
-    margin: 110px auto;
+  /* -------------All Services Section Page-------------- */
+
+  .services-text-section div p {
+    font-size: 1.5rem;
+    line-height: 22px;
+  }
+  .featured-services-section-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 40px;
+  }
+  .featured-services-section-grid-item div h6 {
+    font-size: 1.9rem;
+  }
+  /* -------------Airport Chauffeur Page------------- */
+  .london-airports-section div p {
+    font-size: 1.5rem;
+    line-height: 22px;
+  }
+  .london-airports-section div table {
+    margin: 20px auto 0 auto;
+  }
+  /*------------ All Cars Section------------ */
+  .car-features-section-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 576px) {
+  .h1-small {
+    letter-spacing: 1.5px;
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+  }
+  .h1-med {
+    font-size: 4.4rem;
+    margin-bottom: 5px;
+  }
+  .heading-5 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  .heading-3 {
+    font-size: 2.15rem;
+    margin-bottom: 17px;
+  }
+  .heading-3::after {
+    top: 105%;
+  }
+
+  .h1-large {
+    font-size: 4rem;
+    line-height: 4.2rem;
+  }
+  .heading-4 {
+    font-size: 2.3rem;
+  }
+  .heading-2 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+
+  /* ------------------------------------------ */
   .header-logo > a > img {
     width: 130px;
   }
@@ -448,11 +747,7 @@
   .hero-section-text p {
     font-size: 1.5rem;
   }
-  .h1-small {
-    letter-spacing: 1.5px;
-    font-size: 2.6rem;
-    line-height: 3.2rem;
-  }
+
   .cta-btn > a {
     padding: 6px 19px;
   }
@@ -461,6 +756,7 @@
     font-size: 1.3rem;
   }
   .brands-section-flex {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -484,6 +780,10 @@
   .brands-section-flex-item a {
     font-size: 1.3rem;
   }
+
+  .brands-section-flex-item div span {
+    display: none;
+  }
   .chauffeuring-section-flex > div img {
     height: 280px;
   }
@@ -491,21 +791,10 @@
     font-size: 1.5rem;
     line-height: 2.4rem;
   }
-  .heading-3 {
-    font-size: 2.3rem;
-    margin-bottom: 15px;
-  }
-  .heading-3::after {
-    top: 105%;
-  }
 
-  .h1-large {
-    font-size: 4rem;
-    line-height: 4.2rem;
-  }
   .services-section-slide-content p {
-    font-size: 1.4rem;
-    line-height: 18px;
+    font-size: 1.3rem;
+    line-height: 16px;
     width: 70%;
     margin-top: 15px;
   }
@@ -516,7 +805,7 @@
     width: 70%;
   }
   .services-section-slide-content-solutions div h3 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     letter-spacing: 1.4px;
   }
   .services-section-slide-content {
@@ -574,14 +863,7 @@
   .steps-section-grid-flex-item p {
     font-size: 1.3rem;
   }
-  .h1-med {
-    font-size: 4.4rem;
-    margin-bottom: 5px;
-  }
-  .heading-5 {
-    font-size: 2rem;
-    margin-bottom: 25px;
-  }
+
   .social-media-section-grid-flex-item div {
     height: 200px;
   }
@@ -632,15 +914,8 @@
   .footer-top-right-nav:last-of-type > nav > a {
     border-radius: 5px;
   }
-  /* ---------------------------------- */
+  /* ---------------- Contact Page ------------------- */
 
-  .RL-split-section-grid-left {
-    min-height: 350px;
-  }
-
-  .contact-section {
-    margin: 80px auto;
-  }
   .contact-form-inputset {
     display: flex;
     flex-direction: column;
@@ -648,5 +923,79 @@
     align-items: center;
     column-gap: 0;
     row-gap: 0;
+  }
+  .contact-section-grid-right div h5 {
+    font-size: 1.7rem;
+  }
+  .contact-section-grid-right div p {
+    font-size: 1.35rem;
+  }
+  /*------- Terms, Privacy, Client Safety Notice Page-------- */
+  /* --------------Cars Page --------------*/
+  /*--------------  Chauffeurs Page --------------- */
+  .our-chauffeurs-section-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0;
+  }
+  .our-chauffeurs-section-grid-item:nth-child(3) {
+    background-color: #ffffff0e;
+  }
+  .our-chauffeurs-section-grid-item:last-child {
+    background-color: var(--dark-gray);
+  }
+  .our-chauffeurs-section-grid-item h6 {
+    margin-bottom: 11px;
+    font-size: 1.7rem;
+  }
+  .our-chauffeurs-section-grid-item p {
+    font-size: 1.5rem;
+  }
+  /*--------------- About Page ------------------*/
+  .about-text-section div p {
+    line-height: 23px;
+    font-size: 1.6rem;
+  }
+  .text-half-section-grid-left p {
+    font-size: 1.6rem;
+    line-height: 23px;
+  }
+
+  /* --------------RL Split Section--------------- */
+  .RL-split-section-grid-left div > div > p {
+    margin: 20px 0 25px 0;
+    line-height: 21px;
+  }
+  .RL-split-section-grid-left > div > div span {
+    font-size: 1.4rem;
+  }
+  .RL-split-section-grid-left {
+    min-height: 430px;
+  }
+  /*----------- Services Page----------- */
+  .services-text-section div p {
+    font-size: 1.45rem;
+    line-height: 22px;
+  }
+  /* ---------Airport Chauffeur Page------------ */
+  .london-airports-section div table tr td {
+    font-size: 1.4rem;
+  }
+  .london-airports-section div table th {
+    font-size: 1.5rem;
+  }
+  .extra-services-section-grid-left {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+  /* -----------All Cars Section------------ */
+  .car-features-section-grid-item img {
+    width: 30px;
+  }
+  .car-features-section-grid-item h3 {
+    font-size: 1.1rem;
+  }
+  .car-features-section-grid-item span {
+    font-size: 1.1rem;
   }
 }
