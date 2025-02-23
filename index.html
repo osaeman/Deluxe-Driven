@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Website Title -->
+    <title>Deluxe Driven | Homepage</title>
+    <!-- 
+    <meta
+      name="keywords"
+      content=""
+    />
+    <meta
+      name="description"
+      content=""
+    />
+
+    <meta name="author" content="" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="google" content="nositelinkssearchbox" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/default-favicon.ico"
+      type="image/x-icon"
+    /> -->
+
+    <!-- Google Fonts -->
+    <!-- Preconnecting can help reduce the latency when actual requests are made to this domain, such as when fetching font resources. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-------------- Header ---------------->
+    <header class="container">
+      <div class="header-flexbox">
+        <div class="header-logo-mob">
+          <a href="./index.html">
+            <img src="./assets/pics/deluxe driven logo.png" alt="" />
+          </a>
+        </div>
+        <div class="header-nav">
+          <div class="header-logo">
+            <a href="./index.html">
+              <img src="./assets/pics/deluxe driven logo.png" alt="" />
+            </a>
+          </div>
+          <nav>
+            <span class="sub-menu-link">
+              <a>Services</a>
+              <div class="sub-menu-dropdown">
+                <ul>
+                  <li>
+                    <a href="./pages/businesschauffeur.html"
+                      >Business and Corporate Chauffeur
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./pages/airportchaffeur.html">Airport Chauffeur</a>
+                  </li>
+                  <li>
+                    <a href="./pages/personalchauffeur.html"
+                      >Personal Chauffeur</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./pages/eventchauffeur.html">Event Chauffeur</a>
+                  </li>
+                </ul>
+              </div>
+            </span>
+            <span class="sub-menu-link">
+              <a href="./pages/cars.html"> Cars</a>
+              <!-- <div class="sub-menu-dropdown">
+                <ul>
+                  <li>
+                    <a href="./pages/cars.html">Mercedes S Class </a>
+                  </li>
+                  <li>
+                    <a href="./pages/cars.html">Mercedes V Class</a>
+                  </li>
+                  <li>
+                    <a href="./pages/cars.html"> Mercedes Jet Class</a>
+                  </li>
+                  <li>
+                    <a href="./pages/cars.html">Range Rover Vogue </a>
+                  </li>
+                  <li>
+                    <a href="./pages/cars.html">Rolls Royce Ghost </a>
+                  </li>
+                  <li>
+                    <a href="./pages/cars.html">Rolls Royce Cullinan </a>
+                  </li>
+                </ul>
+              </div> -->
+            </span>
+
+            <span>
+              <a href="./pages/chauffeur.html"> Chauffeur</a>
+            </span>
+            <span>
+              <a href="./pages/about.html"> About Us</a>
+            </span>
+          </nav>
+          <button>
+            <a href="./pages/quote.html">
+              Quote <i class="fal fa-arrow-right"></i
+            ></a>
+          </button>
+        </div>
+
+        <div class="hamburger-btn">
+          <i class="fal fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!----------- Mobile Header Slider ------------>
+    <div class="mobile-nav-slider">
+      <div class="mobile-nav-slider-top">
+        <i class="fal fa-window-close slider-close-btn"></i>
+      </div>
+      <div class="mobile-nav-menu">
+        <nav>
+          <span class="mobile-nav-link">
+            <a href="./index.html">Home </a>
+          </span>
+          <span class="mobile-nav-link clickable-link">
+            <a
+              >Services
+              <span class="mobile-nav-link-i"><i class="far fa-plus"></i></span>
+            </a>
+            <div class="mobile-nav-dropdown">
+              <ul>
+                <li>
+                  <a href="./pages/businesschauffeur.html"
+                    >Business and Corporate Chauffeur
+                  </a>
+                </li>
+                <li>
+                  <a href="./pages/airportchaffeur.html">Airport Chauffeur</a>
+                </li>
+                <li>
+                  <a href="./pages/personalchauffeur.html"
+                    >Personal Chauffeur</a
+                  >
+                </li>
+                <li>
+                  <a href="./pages/eventchauffeur.html">Event Chauffeur</a>
+                </li>
+              </ul>
+            </div>
+          </span>
+
+          <span class="mobile-nav-link">
+            <a href="./pages/cars.html">
+              Cars
+              <!-- <span class="mobile-nav-link-i"><i class="far fa-plus"></i></span> -->
+            </a>
+            <!-- <div class="mobile-nav-dropdown">
+              <ul>
+                <li>
+                  <a href="">Mercedes S Class </a>
+                </li>
+                <li>
+                  <a href="">Mercedes V Class</a>
+                </li>
+                <li>
+                  <a href=""> Mercedes Jet Class</a>
+                </li>
+                <li>
+                  <a href="">Range Rover Vogue </a>
+                </li>
+                <li>
+                  <a href="">Rolls Royce Ghost </a>
+                </li>
+                <li>
+                  <a href="">Rolls Royce Cullinan </a>
+                </li>
+              </ul>
+            </div> -->
+          </span>
+
+          <span class="mobile-nav-link">
+            <a href="./pages/chauffeur.html"> Chauffeur</a>
+          </span>
+          <span class="mobile-nav-link">
+            <a href="./pages/about.html"> About Us</a>
+          </span>
+          <span class="mobile-nav-link">
+            <a href="./pages/contact.html"> Contact</a>
+          </span>
+          <span class="mobile-nav-link">
+            <a href="./pages/quote.html"> Get a Quote </a>
+          </span>
+        </nav>
+      </div>
+    </div>
+    <!----------- Main Page Hero Section ------------>
+    <!---------------- Hero Section--------------->
+    <section class="hero-section">
+      <div class="hero-section-div">
+        <div class="hero-bg-img">
+          <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide heroSwiper-slide">
+                <img src="./assets/pics/1.jpg" />
+              </div>
+              <div class="swiper-slide heroSwiper-slide">
+                <img src="./assets/pics/4.jpg" />
+              </div>
+              <div class="swiper-slide heroSwiper-slide">
+                <img src="./assets/pics/8.jpg" />
+              </div>
+              <div class="swiper-slide heroSwiper-slide">
+                <img src="./assets/pics/5.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-fg-img">
+          <img src="./assets/pics/design 3.png" alt="" />
+        </div>
+        <div class="hero-section-text">
+          <h1 class="h1-small">
+            Redefining Luxury
+            <span id="text"> Business & Corporate </span>
+            Chauffeur Service!
+          </h1>
+          <p>
+            Premium Chauffeur Service for Exclusive Events – Hassle-Free, No
+            Hidden Fees!
+          </p>
+          <button class="cta-btn">
+            <a href="./pages/quote.html">
+              Quote <i class="fal fa-arrow-right"></i
+            ></a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!------------- Side Contact Bar ------------->
+    <section class="side-contact-bar">
+      <div class="side-contact-bar-flex">
+        <a href="mailto:bookings@deluxedriven.co.uk"
+          ><i class="fas fa-envelope"></i
+        ></a>
+        <a
+          href="tel:0203 8888844
+        "
+          ><i class="fas fa-phone-alt"></i
+        ></a>
+        <a href="https://wa.me/+447366844844"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+    </section>
+    <!-------------- Brands Section ---------------->
+    <section class="brands-section container">
+      <div class="brands-section-flex">
+        <div class="brands-section-flex-item">
+          <img src="./assets/pics/range-rover-seeklogo.png" alt="" />
+          <div>
+            <h5>Range Rover</h5>
+            <a href="./pages/cars.html"
+              >See all models <i class="far fa-long-arrow-alt-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="brands-section-flex-item">
+          <img src="./assets/pics/rolls-royce-seeklogo.png" alt="" />
+          <div>
+            <h5>Rolls Royce</h5>
+            <a href="./pages/cars.html"
+              >See all models <i class="far fa-long-arrow-alt-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="brands-section-flex-item">
+          <img src="./assets/pics/mercedes-benz-seeklogo.png" alt="" />
+          <div>
+            <h5>Mercedes</h5>
+            <a href="./pages/cars.html"
+              >See all models <i class="far fa-long-arrow-alt-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------ Chauffeuring Home Page Section ------------->
+    <!------------ Chauffeuring Section ---------->
+    <section class="chauffeuring-section customize-container">
+      <div class="chauffeuring-section-flex">
+        <div><img src="./assets/pics/35.jpg" alt="" /></div>
+        <div>
+          <h3 class="heading-3">
+            Luxury Chauffeur Services for the Modern Traveler
+          </h3>
+          <p>
+            Deluxe Driven provides top-tier chauffeur services across the UK,
+            catering to both business and personal travel, as well as special
+            occasions. Based in London, we are dedicated to delivering a
+            seamless and sophisticated journey, ensuring comfort, reliability,
+            and personalized service tailored to your needs. With a commitment
+            to excellence, Deluxe Driven is your trusted partner for premium
+            travel experiences
+          </p>
+        </div>
+      </div>
+    </section>
+    <!----------- Services Home Page Section ----------->
+    <!----------- Services Section -------------->
+    <section class="services-section">
+      <div class="swiper mySwiper customize-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide services-section-slide">
+            <img src="./assets/pics/61.jpg" alt="" />
+            <div class="services-section-slide-content">
+              <h1 class="h1-large">
+                Business & <br />
+                Corporate <br />Chauffeur
+              </h1>
+              <p>
+                Imperial Ride provides professional business chauffeur services,
+                ensuring secure, punctual, and hassle-free corporate travel in
+                London
+              </p>
+              <div class="services-section-slide-content-solutions">
+                <div>
+                  <h3>
+                    One way
+                    <br />
+                    Journey
+                  </h3>
+                </div>
+                <div>
+                  <h3>
+                    Hourly <br />
+                    Journey
+                  </h3>
+                </div>
+                <div>
+                  <h3>
+                    City to <br />
+                    City <br />Journey
+                  </h3>
+                </div>
+                <div>
+                  <h3>
+                    Country to <br />
+                    Country <br />
+                    Journey
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide services-section-slide">
+            <img src="./assets/pics/38.jpg" alt="" />
+            <div class="services-section-slide-content">
+              <h1 class="h1-large">
+                Personal <br />
+                Chauffeur
+              </h1>
+              <p>
+                Imperial Ride provides professional personal chauffeur services
+                for single rides and long-term travel across the UK and West
+                Europe
+              </p>
+              <div class="services-section-slide-content-solutions">
+                <div>
+                  <h3>
+                    One way
+                    <br />
+                    Journey
+                  </h3>
+                </div>
+                <div>
+                  <h3>
+                    Hourly <br />
+                    Journey
+                  </h3>
+                </div>
+                <div>
+                  <h3>
+                    City to <br />
+                    City <br />Journey
+                  </h3>
+                </div>
+                <div>
+                  <h3>
+                    Country to <br />
+                    Country <br />
+                    Journey
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide services-section-slide">
+            <img src="./assets/pics/69.webp" alt="" />
+            <div class="services-section-slide-content">
+              <h1 class="h1-large">
+                Airport <br />
+                Chauffeur
+              </h1>
+              <p>
+                Imperial Ride offers premium airport chauffeur services,
+                ensuring seamless, comfortable, and punctual transfers to and
+                from all major London airports
+              </p>
+              <div class="services-section-slide-content-solutions">
+                <div>
+                  <h3>
+                    One way
+                    <br />
+                    Journey
+                  </h3>
+                </div>
+                <div>
+                  <h3>
+                    Hourly <br />
+                    Journey
+                  </h3>
+                </div>
+                <div>
+                  <h3>
+                    City to <br />
+                    City <br />Journey
+                  </h3>
+                </div>
+                <div>
+                  <h3>
+                    Country to <br />
+                    Country <br />
+                    Journey
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide services-section-slide">
+            <img src="./assets/pics/34.jpg" alt="" />
+            <div class="services-section-slide-content">
+              <h1 class="h1-large">Events <br />Chauffeur</h1>
+              <p>
+                Arrive in style with our premium event chauffeuring service,
+                ensuring luxury, comfort, and punctuality for any occasion
+              </p>
+              <div class="services-section-slide-content-solutions">
+                <div>
+                  <h3>
+                    One way
+                    <br />
+                    Journey
+                  </h3>
+                </div>
+                <div>
+                  <h3>
+                    Hourly <br />
+                    Journey
+                  </h3>
+                </div>
+                <div>
+                  <h3>
+                    City to <br />
+                    City <br />Journey
+                  </h3>
+                </div>
+                <div>
+                  <h3>
+                    Country to <br />
+                    Country <br />
+                    Journey
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-------------- Call Us At Section ----------------->
+    <section class="call-us-at-section">
+      <div class="call-us-at-section-grid container">
+        <div class="call-us-at-section-left">
+          <img src="./assets/pics/51.png" alt="Red Car" />
+        </div>
+        <div class="call-us-at-section-right">
+          <h5>Need a Chauffeur? Contact Us Now!</h5>
+          <h6>CALL: 0203 8888844, 01727 228844</h6>
+          <h6>Whatsapp: +447366844844</h6>
+          <h6>
+            Email:
+            <a href="mailto:bookings@deluxedriven.co.uk"
+              >bookings@deluxedriven.co.uk</a
+            >
+          </h6>
+          <p>
+            Providing reliable, professional, and luxurious chauffeuring
+            services for airport transfers, corporate travel, events, and
+            personal hire.
+          </p>
+          <button class="cta-btn-style-1">
+            <a href="tel:0203 8888844">
+              Call Us <i class="fal fa-arrow-right"></i
+            ></a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!------------ Cover Areas Section ------------>
+    <section class="cover-area-section container">
+      <h5 class="heading-5">Areas We Cover</h5>
+      <div class="cover-area-section-grid">
+        <div class="cover-area-section-grid-item">
+          <div>
+            <h4>London</h4>
+            <span> Business & Cultural Hub</span>
+          </div>
+
+          <img src="./assets/pics/london.jpg" alt="" />
+        </div>
+        <div class="cover-area-section-grid-item">
+          <div>
+            <h4>Bedfordshire</h4>
+            <span>Tranquil Countryside</span>
+          </div>
+
+          <img src="./assets/pics/bedfordshire.jpg" alt="" />
+        </div>
+        <div class="cover-area-section-grid-item">
+          <div>
+            <h4>Buckinghamshire</h4>
+            <span>Prestige & Elegance</span>
+          </div>
+
+          <img src="./assets/pics/buckhingamshire.jpg" alt="" />
+        </div>
+        <div class="cover-area-section-grid-item">
+          <div>
+            <h4>Hertfordshire</h4>
+            <span>Historic & Scenic</span>
+          </div>
+          <img src="./assets/pics/hertfordshire.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!------------- Hiring Steps Section Homepage ----------->
+    <!----------Steps Section ------------>
+    <section class="steps-section">
+      <div class="steps-section-grid container">
+        <h5 class="heading-5">Chauffeur Hiring</h5>
+        <div class="steps-section-grid-flex">
+          <div class="steps-section-grid-flex-item">
+            <h1 class="h1-med">1</h1>
+            <h6>Choose Your Vehicle</h6>
+            <p>
+              Select from our luxury fleet, including Rolls-Royce, Range Rover,
+              and Mercedes.
+            </p>
+          </div>
+          <div class="steps-section-grid-flex-item">
+            <h1 class="h1-med">2</h1>
+            <h6>Enter Ride Details</h6>
+            <p>Provide pickup location, destination, date, and time.</p>
+          </div>
+          <div class="steps-section-grid-flex-item">
+            <h1 class="h1-med">3</h1>
+            <h6>Confirm & Pay</h6>
+            <p>
+              Secure your booking with transparent pricing and no hidden fees.
+            </p>
+          </div>
+          <div class="steps-section-grid-flex-item">
+            <h1 class="h1-med">4</h1>
+            <h6>Enjoy Your Journey</h6>
+            <p>
+              Our professional chauffeur arrives on time for a seamless
+              experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------- Why Choose Us Section -------------->
+    <!-----------  Values Section ------------->
+    <section class="values-section container">
+      <div class="values-section-top-flex">
+        <div>
+          <h5 class="heading-5">Why Choose Us?</h5>
+          <p class="para">
+            Seamless travel with professional chauffeurs, fixed pricing, and
+            real-time flight tracking.
+          </p>
+        </div>
+        <button class="cta-btn-style-2">
+          <a href="">Get a Quote<i class="far fa-chevron-right"></i></a>
+        </button>
+      </div>
+      <div class="values-section-bottom-grid">
+        <div>
+          <h6>Professional & Courteous Chauffeurs</h6>
+          <p>
+            Licensed, experienced, well-dressed, multilingual, and committed to
+            exceptional service.
+          </p>
+        </div>
+        <div>
+          <h6>Punctual & Hassle-Free Service</h6>
+          <p>
+            Enjoy complimentary waiting time—60 minutes at airports, 15 minutes
+            elsewhere—ensuring a seamless, delay-free journey.
+          </p>
+        </div>
+        <div>
+          <h6>24/7 Customer Service</h6>
+          <p>
+            Our 24/7 customer support is always available to assist with queries
+            and book rides instantly.
+          </p>
+        </div>
+        <div>
+          <h6>Comfortable Vehicles</h6>
+          <p>
+            Premium, Safe, and Fully Licensed Chauffeur Vehicles – Clean,
+            Comfortable, and Well-Maintained.
+          </p>
+        </div>
+        <div>
+          <h6>Seamless & Happy Travel</h6>
+          <p>
+            Enjoy a seamless journey with onboard WiFi, bottled water, chargers,
+            child seats, and air conditioning.
+          </p>
+        </div>
+        <div>
+          <h6>Privacy Policy</h6>
+          <p>
+            Our chauffeurs have signed non-disclosure agreements (NDAs) to
+            guarantee complete privacy and confidentiality for our clients.
+          </p>
+        </div>
+        <div>
+          <h6>Fixed Price</h6>
+          <p>Transparent and fixed pricing with no hidden fees or surprises.</p>
+        </div>
+        <div>
+          <h6>Flight Monitoring</h6>
+          <p>Enjoy hassle-free journeys with our real-time flight tracking.</p>
+        </div>
+      </div>
+    </section>
+    <!-------------  Social Media Section --------------->
+    <section class="social-media-section">
+      <div class="social-media-section-grid container">
+        <h5 class="heading-5">Join Our Social Media</h5>
+        <div class="social-media-section-grid-flex">
+          <div class="social-media-section-grid-flex-item">
+            <div>
+              <img src="./assets/pics/instagram.png" alt="" />
+              <h6>Instagram</h6>
+
+              <a
+                href="https://www.instagram.com/deluxedriven/profilecard/?igsh=dG41b2V4Z2kxMWIw"
+              >
+                Follow Us</a
+              >
+            </div>
+          </div>
+          <div class="social-media-section-grid-flex-item">
+            <div>
+              <img src="./assets/pics/facebook.png" alt="" />
+              <h6>Facebook</h6>
+              <a
+                href="https://www.facebook.com/share/1F3CXhGUqa/?mibextid=wwXIfr"
+                >Follow Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------- Footer --------------->
+    <footer>
+      <div class="footer-top container">
+        <div class="footer-top-left">
+          <img src="./assets/pics/deluxe driven logo.png" alt="" />
+        </div>
+        <div class="footer-top-right">
+          <div class="footer-top-right-nav">
+            <span>Helpful Links</span>
+            <nav>
+              <a href="./index.html" class="current-page">Home</a>
+              <a href="./pages/chauffeur.html">Chauffeur</a>
+              <a href="./pages/cars.html">Cars</a>
+              <a href="./pages/contact.html">Contact Us</a>
+            </nav>
+          </div>
+          <div class="footer-top-right-nav">
+            <span>Legal Links</span>
+            <nav>
+              <a href="./pages/about.html">About</a>
+              <a href="./pages/terms.html">Terms and Conditions</a>
+              <a href="./pages/privacypolicy.html">Privacy Policy</a>
+              <a href="./pages/clientsafetynotice.html">Client Safety Notice</a>
+            </nav>
+          </div>
+          <div class="footer-top-right-nav">
+            <span>Follow Us</span>
+            <nav>
+              <a
+                href="https://www.facebook.com/share/1F3CXhGUqa/?mibextid=wwXIfr"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/deluxedriven/profilecard/?igsh=dG41b2V4Z2kxMWIw"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          Copyright © 2025 Deluxe Driven. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="./js/app.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+      // Swiper Js Testimonial Section
+      var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          delay: 4000, // Delay between slides in milliseconds (3 seconds in this example)
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+
+      //  Sentence Animation
+      // List of sentences
+      var _CONTENT = ["Business & Corporate", "Airport", "Personal", "Events"];
+
+      // Current sentence being processed
+      var _PART = 0;
+
+      // Character number of the current sentence being processed
+      var _PART_INDEX = 0;
+
+      // Holds the handle returned from setInterval
+      var _INTERVAL_VAL;
+
+      // Element that holds the text
+      var _ELEMENT = document.querySelector("#text");
+
+      // Implements typing effect
+      function Type() {
+        var text = _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+        _ELEMENT.innerHTML = text;
+        _PART_INDEX++;
+
+        // If full sentence has been displayed then start to delete the sentence after some time
+        if (text === _CONTENT[_PART]) {
+          clearInterval(_INTERVAL_VAL);
+          setTimeout(function () {
+            _INTERVAL_VAL = setInterval(Delete, 50);
+          }, 2000);
+        }
+      }
+      // Implements deleting effect
+      function Delete() {
+        var text = _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+        _ELEMENT.innerHTML = text;
+        _PART_INDEX--;
+
+        // If sentence has been deleted then start to display the next sentence
+        if (text === "") {
+          clearInterval(_INTERVAL_VAL);
+
+          // If last sentence then display the first one, else move to the next
+          if (_PART == _CONTENT.length - 1) _PART = 0;
+          else _PART++;
+          _PART_INDEX = 0;
+
+          // Start to display the next sentence after some time
+          setTimeout(function () {
+            _INTERVAL_VAL = setInterval(Type, 200);
+          }, 300);
+        }
+      }
+      // Start the typing effect on load
+      _INTERVAL_VAL = setInterval(Type, 100);
+
+      // Hero Swiper
+      var swiper = new Swiper(".heroSwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        autoplay: {
+          delay: 4000, // Delay between slides in milliseconds (3 seconds in this example)
+        },
+      });
+    </script>
+  </body>
+</html>
