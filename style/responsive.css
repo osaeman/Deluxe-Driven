@@ -105,6 +105,14 @@
   }
 
   /* ---------------------------------------- */
+  header {
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 20;
+  }
   .hero-section {
     height: 520px;
   }
@@ -144,22 +152,22 @@
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 0;
     grid-row-gap: 20px;
-    padding: 30px 15px 30px 15px;
+    padding: 20px 15px 20px 15px;
   }
-  .brands-section-flex-item div {
+  .brands-section-flex-item-model {
     align-items: center;
   }
-  .brands-section-flex-item img {
+  .brands-section-flex-item-logo img {
     width: 130px;
-    height: 60px;
+    height: 50px;
   }
-  .brands-section-flex-item div span {
+  .brands-section-flex-item-model > span {
     text-align: center;
   }
-  .brands-section-flex-item h5 {
-    font-size: 1.7rem;
+  .brands-section-flex-item-model h5 {
+    font-size: 1.6rem;
   }
-  .brands-section-flex-item a {
+  .brands-section-flex-item-model a {
     font-size: 1.4rem;
   }
   .chauffeuring-section-flex {
@@ -286,6 +294,98 @@
   .RL-split-section-grid-left > div > div span {
     font-size: 1.6rem;
   }
+
+  /* -------------------------------------------- */
+  .RL-split-section-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .RL-split-section-grid img {
+    display: none;
+  }
+  .RL-split-section-grid-left {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 550px;
+    width: 100%;
+  }
+  .RL-split-section-grid-left > div {
+    z-index: 5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  .RL-split-section-grid-left > div h1,
+  .RL-split-section-grid-left > div p {
+    color: white;
+  }
+  .RL-split-section-grid-left > div > div {
+    width: 80%;
+    margin-right: auto;
+  }
+  .RL-split-section-grid-left::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 10%,
+      rgba(31, 31, 31, 0.4) 29%,
+      rgba(0, 0, 0, 1) 94%
+    );
+  }
+  .RL-split-section-grid-left p {
+    margin: 15px 0 25px 0;
+  }
+  .RL-split-section-grid-left div > div > p {
+    line-height: 23px;
+    font-size: 1.5rem;
+    margin: 15px 0 25px 0;
+  }
+  .RL-split-section-grid-left p span {
+    display: none;
+  }
+  .cta-btn-style-3 a {
+    font-size: 1.3rem;
+    padding: 7px 20px;
+    column-gap: 15px;
+  }
+  .cta-btn-style-3 a i {
+    background-color: var(--white-clr);
+    border-radius: 50%;
+    padding: 6px 7px;
+    color: var(--dark-black);
+    font-size: 1.25rem;
+  }
+  .RL-split-section-grid-left-business {
+    background-image: url("../assets/pics/47.jpg");
+  }
+  .RL-split-section-grid-left-event {
+    background-image: url("../assets/pics/46.webp");
+  }
+  .RL-split-section-grid-left-personal {
+    background-image: url("../assets/pics/60.jpg");
+  }
+  .RL-split-section-grid-left-airport {
+    background-image: url("../assets/pics/40.jpg");
+  }
+  .RL-split-section-grid-left-about {
+    background-image: url("../assets/pics/48.jpg");
+  }
+  .RL-split-section-grid-left-chauffeurs {
+    background-image: url("../assets/pics/62.jpg");
+  }
+
   /* -------------All Services Section Page-------------- */
   .featured-services-section-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -384,6 +484,38 @@
     height: 46px;
     font-size: 1.6rem;
   }
+
+  .brands-section-flex-item {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    padding: 15px 10px 15px 10px;
+  }
+  .brands-section-flex {
+    grid-column-gap: 7px;
+  }
+  .brands-section-flex-item-logo img {
+    width: 65%;
+  }
+  .brands-section-flex-item-model h5 {
+    margin-bottom: 0;
+    display: none;
+  }
+  .brands-section-flex-item-model a {
+    margin-top: 10px;
+  }
+
+  .brands-section-flex-item-model a span {
+    display: none;
+  }
+
+  .brands-section-flex-item-model > span {
+    display: none;
+  }
+  .brands-section-cars-page {
+    width: 70%;
+  }
+
   .chauffeuring-section-flex {
     display: flex;
     flex-direction: column;
@@ -577,96 +709,6 @@
     height: 100%;
   }
 
-  /* -------------------------------------------- */
-  .RL-split-section-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .RL-split-section-grid img {
-    display: none;
-  }
-  .RL-split-section-grid-left {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    min-height: 450px;
-    width: 100%;
-  }
-  .RL-split-section-grid-left > div {
-    z-index: 5;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .RL-split-section-grid-left > div h1,
-  .RL-split-section-grid-left > div p {
-    color: white;
-  }
-  .RL-split-section-grid-left > div > div {
-    width: 80%;
-    margin-right: auto;
-  }
-  .RL-split-section-grid-left::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.2) 10%,
-      rgba(31, 31, 31, 0.4) 29%,
-      rgba(0, 0, 0, 1) 94%
-    );
-  }
-  .RL-split-section-grid-left p {
-    margin: 15px 0 25px 0;
-  }
-  .RL-split-section-grid-left div > div > p {
-    line-height: 23px;
-    font-size: 1.5rem;
-    margin: 15px 0 25px 0;
-  }
-  .RL-split-section-grid-left p span {
-    display: none;
-  }
-  .cta-btn-style-3 a {
-    font-size: 1.3rem;
-    padding: 7px 20px;
-    column-gap: 15px;
-  }
-  .cta-btn-style-3 a i {
-    background-color: var(--white-clr);
-    border-radius: 50%;
-    padding: 6px 7px;
-    color: var(--dark-black);
-    font-size: 1.25rem;
-  }
-  .RL-split-section-grid-left-business {
-    background-image: url("../assets/pics/47.jpg");
-  }
-  .RL-split-section-grid-left-event {
-    background-image: url("../assets/pics/46.webp");
-  }
-  .RL-split-section-grid-left-personal {
-    background-image: url("../assets/pics/60.jpg");
-  }
-  .RL-split-section-grid-left-airport {
-    background-image: url("../assets/pics/40.jpg");
-  }
-  .RL-split-section-grid-left-about {
-    background-image: url("../assets/pics/48.jpg");
-  }
-  .RL-split-section-grid-left-chauffeurs {
-    background-image: url("../assets/pics/62.jpg");
-  }
-
   /* -------------All Services Section Page-------------- */
 
   .services-text-section div p {
@@ -755,35 +797,13 @@
     padding: 7px 7px;
     font-size: 1.3rem;
   }
-  .brands-section-flex {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    column-gap: 10px;
-    row-gap: 10px;
+  .brands-section-flex-item-logo img {
+    height: 40px;
   }
-  .brands-section-flex-item {
-    padding: 20px 13px 20px 13px;
-    width: 180px;
+  .brands-section-flex-item-model a {
+    font-size: 1.1rem;
   }
 
-  .brands-section-flex-item img {
-    width: 110px;
-    height: 50px;
-  }
-  .brands-section-flex-item h5 {
-    font-size: 1.6rem;
-    margin-bottom: 4px;
-  }
-  .brands-section-flex-item a {
-    font-size: 1.3rem;
-  }
-
-  .brands-section-flex-item div span {
-    display: none;
-  }
   .chauffeuring-section-flex > div img {
     height: 280px;
   }

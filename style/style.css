@@ -342,7 +342,7 @@ header {
 
 .hamburger-btn {
   display: none;
-  color: var(--light-gray);
+  color: white;
 }
 .current-page {
   color: var(--golden-clr) !important;
@@ -566,13 +566,15 @@ header {
 
 /* ------------ Brands Section ------------- */
 .brands-section {
+  max-width: 1200px;
+  width: 92%;
   margin: 50px auto 100px auto;
 }
 
 .brands-section-flex {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 15px;
+  grid-column-gap: 10px;
 }
 
 .brands-section-flex-item {
@@ -581,47 +583,51 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
-  padding: 40px 20px 40px 20px;
+  padding: 30px 20px 30px 20px;
   border-radius: 4px;
 }
-.brands-section-flex-item div {
+.brands-section-flex-item-model {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
-.brands-section-flex-item img {
+.brands-section-flex-item-logo {
+  width: 100%;
+  height: 100%;
+}
+.brands-section-flex-item-logo img {
   width: 75%;
   object-fit: contain;
   object-position: center;
   height: 100px;
-  margin: auto;
+  margin: 0 auto;
 }
 
-.brands-section-flex-item h5 {
+.brands-section-flex-item-model h5 {
   color: var(--white-clr);
   font-size: 1.9rem;
   letter-spacing: 1.8px;
   margin-bottom: 10px;
 }
 
-.brands-section-flex-item a {
+.brands-section-flex-item-model a {
   color: var(--white-clr);
   letter-spacing: 1.3px;
   font-size: 1.5rem;
   color: var(--golden-clr);
 }
 
-.brands-section-flex-item a i {
+.brands-section-flex-item-model a i {
   margin-left: 10px;
   transition: all 0.5s ease-in-out;
 }
-.brands-section-flex-item a:hover i {
+.brands-section-flex-item-model a:hover i {
   transform: translateX(10px) scale(1.2);
   color: var(--light-gray);
 }
 
-.brands-section-flex-item div span {
+.brands-section-flex-item-model > span {
   font-size: 1.4rem;
   color: var(--golden-clr);
 }
