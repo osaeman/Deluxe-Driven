@@ -122,6 +122,8 @@
   }
   .hero-section-text {
     width: 500px;
+    top: 60%;
+    transform: translate(-50%, -60%);
   }
   .hero-section-text p {
     font-size: 1.7rem;
@@ -460,7 +462,7 @@
 
   /* ------------------------------------ */
   .hero-section {
-    height: 450px;
+    height: 480px;
     margin-top: 0;
   }
 
@@ -468,7 +470,8 @@
     width: 80%;
   }
   .hero-section-text p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    margin: 15px 0 15px 0;
   }
 
   .cta-btn > a {
@@ -780,14 +783,14 @@
   }
 
   .hero-section {
-    height: 320px;
+    height: 430px;
   }
 
   .hero-section-text {
     width: 85%;
   }
   .hero-section-text p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .cta-btn > a {
