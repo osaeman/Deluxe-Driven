@@ -983,8 +983,10 @@
   /* --------------RL Split Section--------------- */
   .RL-split-section-grid-left div > div > p {
     margin: 20px 0 25px 0;
-    line-height: 21px;
+    line-height: 18px;
+    font-size: 1.3rem;
   }
+
   .RL-split-section-grid-left > div > div span {
     font-size: 1.4rem;
   }
