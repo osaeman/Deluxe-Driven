@@ -191,7 +191,7 @@ a {
 .para {
   font-size: 1.6rem;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 25px;
   letter-spacing: 1px;
   color: var(--white-clr);
   font-family: "alliance-regular";
@@ -1358,6 +1358,7 @@ header {
   color: white;
   line-height: 24px;
   color: var(--light-gray);
+  text-align: justify;
 }
 .london-airports-section div table {
   max-width: 700px;
@@ -1533,10 +1534,11 @@ header {
   font-size: 1.45rem;
   font-family: "alliance-light", sans-serif;
   font-weight: 400;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.4px;
   color: white;
   line-height: 22px;
   padding: 20px 15px 10px 10px;
+  text-align: justify;
 }
 /* Services Text Section in Event Chauffeur Service Page, Business Chauffeur Service Page, Airport Chauffeur Service Page, Personal Chauffeur Service Page */
 /* ------------- Services Text Section------------- */
@@ -1548,10 +1550,11 @@ header {
   font-size: 1.6rem;
   font-family: "alliance-light", sans-serif;
   font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 1.7px;
+  line-height: 24px;
+  letter-spacing: 1.4px;
   margin-bottom: 12px;
   text-align: justify;
+  color: var(--light-gray);
 }
 
 /* -----Modification in LR Split Section For Business & Corporate Chauffeur Service, Airport Chauffeur Service, Personal Chauffeur Service, Event Chauffeur Service Pages ------*/
@@ -1734,6 +1737,7 @@ header {
   line-height: 28px;
   color: var(--light-gray);
   font-size: 1.7rem;
+  text-align: justify;
 }
 /* ------- Text Half Section in About Page , Personal Chauffeur Page --------- */
 /* -----------Text Half Section------------ */
@@ -1760,7 +1764,7 @@ header {
 
 .text-half-section-grid-left p {
   margin-bottom: 10px;
-  line-height: 28px;
+  line-height: 26px;
   color: var(--light-gray);
   font-size: 1.7rem;
 }

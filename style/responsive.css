@@ -328,10 +328,10 @@
   /*------- Terms, Privacy, Client Safety Notice Page-------- */
   /*------------- Cars Page------------------ */
   .top-section-cars > div > img {
-    height: 410px;
+    height: 420px;
   }
   .top-section > div > img {
-    height: 370px;
+    height: 385px;
   }
   .term-text-section h3 {
     font-size: 2rem;
@@ -578,6 +578,11 @@
   .heading-2 {
     font-size: 3.6rem;
     line-height: 4rem;
+  }
+  .para {
+    font-size: 1.5rem;
+
+    line-height: 22px;
   }
 
   /* -------------Margins----------------------- */
@@ -857,7 +862,7 @@
   }
 
   .top-section > div > img {
-    height: 330px;
+    height: 350px;
   }
   .contact-section > p {
     margin: 5px 0 40px 0;
@@ -867,9 +872,15 @@
   .contact-section-grid-right div {
     margin-bottom: 7px;
   }
+  /*------------- About Page--------------- */
+  .text-half-section-grid-left p {
+    line-height: 22px;
+    font-size: 1.5rem;
+  }
+
   /*------- Terms, Privacy, Client Safety Notice Page-------- */
   .top-section-cars > div > img {
-    height: 350px;
+    height: 380px;
   }
   .term-text-section h3 {
     font-size: 1.8rem;
@@ -985,9 +996,7 @@
   .cover-area-section {
     margin: 50px auto;
   }
-  .steps-section {
-    margin: 60px auto;
-  }
+
   .social-media-section {
     margin: 60px auto 0 auto;
   }
@@ -1053,6 +1062,7 @@
   .chauffeuring-section-flex > div p {
     font-size: 1.4rem;
     line-height: 2.1rem;
+    color: var(--light-gray);
   }
 
   .services-section-slide-content p {
@@ -1118,13 +1128,20 @@
     left: 15px;
     bottom: 15px;
   }
+  .steps-section {
+    margin: 60px auto;
+  }
   .steps-section-grid-flex-item h6 {
-    font-size: 1.6rem;
+    font-size: 1.55rem;
     margin-bottom: 5px;
   }
 
   .steps-section-grid-flex-item p {
     font-size: 1.3rem;
+  }
+
+  .steps-section-grid-flex-item {
+    padding: 15px 22px;
   }
 
   .social-media-section-grid-flex-item div {
@@ -1199,7 +1216,7 @@
   }
   /*------- Terms, Privacy, Client Safety Notice Page-------- */
   .top-section-cars > div > img {
-    height: 300px;
+    height: 350px;
   }
   /* --------------Cars Page --------------*/
   /*--------------  Chauffeurs Page --------------- */
@@ -1222,12 +1239,19 @@
   }
   /*--------------- About Page ------------------*/
   .about-text-section div p {
-    line-height: 23px;
-    font-size: 1.6rem;
+    line-height: 20px;
+    font-size: 1.4rem;
+  }
+  .text-half-section-grid-left {
+    padding: 20px 20px;
   }
   .text-half-section-grid-left p {
-    font-size: 1.6rem;
-    line-height: 23px;
+    font-size: 1.4rem;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+  .text-half-section-grid-right img {
+    aspect-ratio: 3/1.6;
   }
   /* ------ Split Car Section ---------*/
 
@@ -1254,8 +1278,14 @@
   }
   /*----------- Services Page----------- */
   .services-text-section div p {
-    font-size: 1.45rem;
+    font-size: 1.4rem;
     line-height: 22px;
+  }
+  .featured-services-section-grid-item p {
+    color: var(--light-gray);
+    font-size: 1.4rem;
+    line-height: 20px;
+    letter-spacing: 1.2px;
   }
   /* ---------Airport Chauffeur Page------------ */
   .london-airports-section div table tr td {
@@ -1278,5 +1308,9 @@
   }
   .car-features-section-grid-item span {
     font-size: 1.1rem;
+  }
+  .split-car-section-grid-left div > div > p {
+    font-size: 1.45rem;
+    line-height: 23px;
   }
 }
