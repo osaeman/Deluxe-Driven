@@ -144,7 +144,7 @@
     margin: 80px auto 90px auto;
   }
   .car-features-section {
-    margin: 70px auto 50px auto;
+    margin: 70px auto 10px auto;
   }
   /* ---------------------------------------- */
   .header-flexbox {
@@ -388,8 +388,6 @@
   .RL-split-section-grid-left > div > div span {
     font-size: 1.6rem;
   }
-
-  /* -------------------------------------------- */
   .RL-split-section-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -481,7 +479,34 @@
   .RL-split-section-grid-left-chauffeurs {
     background-image: url("../assets/pics/62.jpg");
   }
+  /* ------ Split Car Section ---------*/
 
+  .split-car-section-grid-right {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  .split-car-section-grid-right img {
+    height: 400px;
+    width: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .split-car-section-grid-left {
+    min-height: fit-content;
+    margin-bottom: 40px;
+  }
+
+  .split-car-section-grid-left > div > div {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .split-car-section-grid-left div > div > p {
+    margin: 0 0 15px 0;
+  }
   /* -------------All Services Section Page-------------- */
   .featured-services-section-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -876,6 +901,15 @@
     object-fit: cover;
     height: 100%;
   }
+  /* ------ Split Car Section ---------*/
+
+  .split-car-section-grid-right img {
+    height: 340px;
+  }
+  .car-section-btns button a {
+    padding: 11px 22px;
+    font-size: 1.25rem;
+  }
 
   /* -------------All Services Section Page-------------- */
 
@@ -975,6 +1009,9 @@
   }
   .london-airports-section {
     margin: 55px auto 55px auto;
+  }
+  .car-features-section {
+    margin: 55px auto 10px auto;
   }
   /* ------------------------------------------ */
   .header-logo-mob > a > img {
@@ -1192,7 +1229,11 @@
     font-size: 1.6rem;
     line-height: 23px;
   }
+  /* ------ Split Car Section ---------*/
 
+  .split-car-section-grid-right img {
+    height: 300px;
+  }
   /* --------------RL Split Section--------------- */
   .RL-split-section-grid-left div > div > p {
     margin: 20px 0 25px 0;

@@ -1151,7 +1151,7 @@ header {
 /* --------- Car Features Section in All Car Pages ------ */
 /* -------Car Features Section----------- */
 .car-features-section {
-  margin: 150px auto 50px auto;
+  margin: 120px auto 0 auto;
 }
 
 .car-features-section-grid {
@@ -1240,7 +1240,6 @@ header {
   font-size: 1.9rem;
 }
 .overlay .gallery-collection-card-carName > h5 > i {
-  color: var(--light-gray);
   color: var(--golden-clr);
   font-size: 2rem;
   margin-right: 10px;
@@ -1286,7 +1285,7 @@ header {
   content: "";
   display: flex;
   width: 0;
-  height: 2px;
+  height: 1.5px;
   top: 99%;
   background: var(--golden-clr);
   transition: width 0.3s;
@@ -1302,7 +1301,7 @@ header {
   .gallery-collection-card-carName
   > span {
   transition: border 0.4s ease-in;
-  border: 2px solid var(--golden-clr);
+  border: 1.5px solid var(--golden-clr);
   background-color: transparent;
   color: white;
 }
@@ -1339,9 +1338,11 @@ header {
   font-size: 1.4rem;
   border-radius: 3px;
   font-family: "alliance-text", sans-serif;
+  background-color: black;
 }
 .gallery-collection-card-btns button a:hover {
   background-color: var(--golden-clr);
+  color: var(--dark-gray);
 }
 /* ---------Airport Chauffeur Services Page -------- */
 /* ---------- London Airports Section ----------- */
@@ -1571,7 +1572,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* -----Hero Section of Chauffeur page, About Page , All Services Pages and All Cars Pages ------*/
+/* -----Hero Section of Chauffeur page, About Page , All Services Pages  ------*/
 /* ------RL Split Section ---------*/
 
 .RL-split-section-grid {
@@ -1585,7 +1586,8 @@ header {
 .RL-split-section-grid img {
   object-fit: cover;
   object-position: center;
-  min-height: 500px;
+  height: 550px;
+  max-height: 620px;
   width: 100%;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -1629,6 +1631,98 @@ header {
 .RL-split-section-chauffeur .heading-2::after {
   display: none;
 }
+
+/* -------------------All Cars Pages------------------------- */
+/* ------ Split Car Section ---------*/
+
+.split-car-section-grid {
+  position: relative;
+}
+.split-car-section-grid-right {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 50%;
+}
+.split-car-section-grid-right img {
+  object-fit: cover;
+  object-position: center;
+  height: 480px;
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.split-car-section-grid-left {
+  min-height: 480px;
+}
+.split-car-section-grid-left > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 1350px;
+  width: 92%;
+  margin: 0 auto;
+  height: 100%;
+}
+.split-car-section-grid-left > div > div {
+  width: 50%;
+  padding-right: 60px;
+  text-align: justify;
+}
+
+.split-car-section-grid-left div > div > p {
+  margin: 0 0 25px 0;
+  color: var(--light-gray);
+  line-height: 25px;
+}
+
+.car-section-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.car-section-btns button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 10px;
+}
+.car-section-btns button a {
+  background-color: var(--header-border);
+  padding: 12px 26px;
+  display: block;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 2px;
+  font-family: "alliance-text", sans-serif;
+}
+.car-section-btns button a i {
+  margin-right: 10px;
+}
+.car-section-btns button:first-of-type a {
+  background-color: white;
+  color: var(--dark-gray);
+  transition: all 0.4s ease-in-out;
+}
+.car-section-btns button:last-of-type a {
+  background-color: var(--dark-gray);
+  color: white;
+  transition: all 0.4s ease-in-out;
+  letter-spacing: 1.1px;
+}
+.car-section-btns button a:hover {
+  background-color: var(--golden-clr);
+  color: black;
+}
+
 /* ----- About Page ----- */
 /* --------About Text Section--------- */
 .about-text-section {
@@ -2095,51 +2189,6 @@ footer {
   font-family: "alliance-regular";
   font-size: 1.4rem;
   color: var(--light-gray);
-}
-
-.car-section-btns {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.car-section-btns button {
-  outline: none;
-  background-color: transparent;
-  border: none;
-  display: block;
-  width: fit-content;
-  height: fit-content;
-  margin-right: 10px;
-}
-.car-section-btns button a {
-  background-color: var(--header-border);
-  padding: 12px 26px;
-  display: block;
-  color: white;
-  font-size: 1.4rem;
-  font-weight: 600;
-  border-radius: 2px;
-  font-family: "alliance-text", sans-serif;
-}
-.car-section-btns button a i {
-  margin-right: 10px;
-}
-.car-section-btns button:first-of-type a {
-  background-color: white;
-  color: var(--dark-gray);
-  transition: all 0.4s ease-in-out;
-}
-.car-section-btns button:last-of-type a {
-  background-color: var(--dark-gray);
-  color: white;
-  transition: all 0.4s ease-in-out;
-  letter-spacing: 1.1px;
-}
-.car-section-btns button a:hover {
-  background-color: var(--golden-clr);
-  color: black;
 }
 
 /*---------------  Quote Page ---------------- */
