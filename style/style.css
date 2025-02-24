@@ -162,7 +162,7 @@ a {
 
 .heading-4 {
   color: var(--white-clr);
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 700;
   font-family: "Public Sans", serif;
   text-transform: uppercase;
@@ -201,23 +201,26 @@ a {
 header {
   background-color: var(--dark-black);
 }
+
 .header-logo-mob {
   display: none;
 }
 .header-logo > a > img {
-  width: 140px;
-  height: 100px;
+  width: 100px;
+  height: 70px;
+}
+.header-flexbox {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .header-nav {
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--dark-black);
   flex-direction: row;
   height: 100%;
   position: relative;
-  backdrop-filter: blur(1.25rem);
   z-index: 10;
 }
 .header-nav nav {
@@ -232,7 +235,7 @@ header {
   border-radius: 35px;
   background-color: var(--header-bg);
   border: 0.0625rem solid var(--header-border);
-  width: 670px;
+  width: 650px;
   padding: 0 53px;
 }
 
@@ -304,7 +307,7 @@ header {
 }
 .sub-menu-dropdown {
   position: absolute;
-  top: 60px;
+  top: 59px;
   background-color: var(--dark-gray);
   z-index: 10;
   padding: 18px 25px;
@@ -346,6 +349,19 @@ header {
 }
 .current-page {
   color: var(--golden-clr) !important;
+}
+.header-absolute {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: transparent !important;
+  z-index: 10;
+}
+.header-absolute .header-nav nav {
+  background-color: #ffffff76;
+  background-color: rgba(43, 43, 43, 0.97);
+  border: none;
 }
 /* ------------Mobile Header Slider------------ */
 .mobile-nav-slider {
@@ -426,7 +442,7 @@ header {
   text-decoration: underline;
   text-underline-offset: 4px;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 20px;
   letter-spacing: 1.25px;
 }
@@ -568,7 +584,7 @@ header {
 .brands-section {
   max-width: 1200px;
   width: 92%;
-  margin: 50px auto 100px auto;
+  margin: 50px auto 0 auto;
 }
 
 .brands-section-flex {
@@ -654,7 +670,7 @@ header {
 .chauffeuring-section-flex > div p {
   color: var(--white-clr);
   font-size: 1.7rem;
-  line-height: 2.6rem;
+  line-height: 2.4rem;
   letter-spacing: 1.3px;
   margin-bottom: 10px;
 }
@@ -849,7 +865,7 @@ header {
 /* ------------ Hiring Steps Section Homepage ------------ */
 /* ----------Steps Section--------- */
 .steps-section {
-  margin: 100px auto;
+  margin: 150px auto;
   background-image: url("../assets/pics/50.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -893,7 +909,7 @@ header {
 }
 /* ----------- Social Media Section----------- */
 .social-media-section {
-  margin: 100px auto;
+  margin: 150px auto 0 auto;
 }
 .social-media-section-grid {
   display: grid;
@@ -936,7 +952,7 @@ header {
   z-index: -1;
 }
 .social-media-section-grid-flex-item:first-of-type {
-  background-image: url("../assets/pics/13.jpg");
+  background-image: url("../assets/pics/3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1041,7 +1057,7 @@ header {
 /* ------------ Why Choose Us Section ----------- */
 /*------------ Values Section--------------- */
 .values-section {
-  margin: 150px auto;
+  margin: 0 auto 0 auto;
 }
 
 .values-section-top-flex {
@@ -1168,8 +1184,12 @@ header {
 
 /* ------------- Featured Cars Section ---------------- */
 /* ------------ Gallery Section ----------- */
+.footer-mt {
+  margin-top: 0;
+}
 .gallery-section {
-  padding: 120px 0 120px 0;
+  padding: 100px 0 100px 0;
+  margin: 100px auto 0 auto;
   background-color: var(--dark-gray);
 }
 .gallery-section h2 {
@@ -1326,7 +1346,7 @@ header {
 /* ---------Airport Chauffeur Services Page -------- */
 /* ---------- London Airports Section ----------- */
 .london-airports-section {
-  margin: 70px auto;
+  margin: 80px auto 140px auto;
 }
 
 .london-airports-section div p {
@@ -1358,19 +1378,17 @@ header {
   font-size: 1.5rem;
 }
 /* ---------Extra Services Section--------- */
-.extra-services-section {
-  margin: 100px auto;
-}
+
 .extra-services-section-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 15px;
+  grid-column-gap: 13px;
 }
 .extra-services-section-grid-left {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
+  grid-column-gap: 13px;
+  grid-row-gap: 13px;
 }
 .extra-services-section-grid-right img {
   object-position: center;
@@ -1408,7 +1426,8 @@ header {
   width: fit-content;
 }
 
-.cta-btn-style-3 a {
+.cta-btn-style-3 a,
+.cta-btn-style-3 span {
   font-family: "alliance-light", serif;
   background-color: none;
   border: 1px solid var(--white-clr);
@@ -1431,14 +1450,16 @@ header {
   transition: all 0.6s ease-in-out;
   /* background-color: var(--dark-gray); */
 }
-.cta-btn-style-3 a i {
+.cta-btn-style-3 a i,
+.cta-btn-style-3 span i {
   background-color: var(--white-clr);
   border-radius: 50%;
   padding: 8px 9px;
   color: var(--dark-black);
   font-size: 1.4rem;
 }
-.cta-btn-style-3 a:hover {
+.cta-btn-style-3 a:hover,
+.cta-btn-style-3 span:hover {
   background-color: var(--white-clr);
   border: 1px solid transparent;
   color: var(--dark-black);
@@ -1611,7 +1632,7 @@ header {
 /* ----- About Page ----- */
 /* --------About Text Section--------- */
 .about-text-section {
-  margin: 70px auto;
+  margin: 80px auto 40px auto;
 }
 
 .about-text-section div p {
@@ -1622,6 +1643,9 @@ header {
 }
 /* ------- Text Half Section in About Page , Personal Chauffeur Page --------- */
 /* -----------Text Half Section------------ */
+.text-half-section {
+  margin: 0 auto 100px auto;
+}
 .text-half-section-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1650,7 +1674,7 @@ header {
 /* ----------  Chauffeur Page  ----------- */
 /* ------------- Our Chauffeurs Section ------------- */
 .our-chauffeurs-section {
-  margin: 130px auto;
+  margin: 100px auto;
 }
 .our-chauffeurs-section-grid {
   display: grid;
@@ -1692,7 +1716,7 @@ header {
 }
 .top-section div > span {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   font-family: "Public Sans", serif;
   text-transform: uppercase;
@@ -1707,12 +1731,12 @@ header {
   content: "";
   display: flex;
   width: 60%;
-  height: 1px;
-  top: 110%;
+  height: 1.25px;
+  top: 114%;
   background: var(--golden-clr);
 }
 .top-section > div > img {
-  height: 50vh;
+  height: 430px;
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -1745,7 +1769,7 @@ header {
 
 /* -----------Modification in Hero Section of Cars Page and All Cars pages----------------- */
 .top-section-cars > div > img {
-  height: 60vh;
+  height: 470px;
   width: 100%;
   object-fit: cover;
   object-position: 50% 80%;
@@ -1755,23 +1779,24 @@ header {
 /* -------------- Term text Section ---------------- */
 .term-text-section {
   color: var(--white-clr);
-  margin: 50px auto;
+  margin: 0 auto 0 auto;
   text-align: justify;
 }
 .term-text-section h3 {
   color: var(--white-clr);
-  font-size: 2.4rem;
+  font-size: 2.25rem;
   font-weight: 500;
   font-family: "Public Sans", serif;
   margin-bottom: 8px;
+  letter-spacing: 0.1px;
 }
 .term-text-section h4 {
   color: var(--white-clr);
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 500;
   font-family: "Public Sans", serif;
   margin-bottom: 8px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.1px;
 }
 .term-text-section p {
   margin-bottom: 9px;
@@ -1995,7 +2020,7 @@ footer {
 
 .footer-top {
   display: grid;
-  grid-template-columns: 34% 66%;
+  grid-template-columns: 25% 75%;
   padding: 100px 0;
   grid-column-gap: 75px;
 }
@@ -2004,12 +2029,14 @@ footer {
   border-right: 2px solid var(--light-gray);
 }
 .footer-top-left img {
-  width: 250px;
+  width: 150px;
+  height: 120px;
+  margin: 0 auto;
 }
 .footer-top-right {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-bottom: 26px;
+  padding: 10px 0;
 }
 
 .footer-top-right-nav span {
@@ -2113,4 +2140,82 @@ footer {
 .car-section-btns button a:hover {
   background-color: var(--golden-clr);
   color: black;
+}
+
+/*---------------  Quote Page ---------------- */
+.quote-section {
+  max-width: 1000px;
+  width: 92%;
+  margin: 0 auto;
+  background-image: url("../assets/pics/17.jpg");
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 40px;
+  position: relative;
+}
+.quote-section p {
+  color: var(--golden-clr);
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  letter-spacing: -0.6px;
+  font-family: "Inter", serif;
+}
+.quote-section::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.quote-form {
+  position: relative;
+  z-index: 10;
+}
+.quote-form-inputset {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.quote-form-inputset div {
+  width: 100%;
+}
+
+.quote-form input[type="text"],
+.quote-form input[type="email"],
+.quote-form input[type="tel"],
+.quote-form input[type="number"],
+.quote-form input[type="date"] {
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid var(--light-gray);
+  outline: none;
+  padding: 0 10px 9px 2px;
+  font-size: 1.6rem;
+  font-family: "alliance-regular";
+  margin: 10px 0 35px 0;
+  width: 100%;
+  color: var(--white-clr);
+}
+
+.quote-form select {
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid var(--light-gray);
+  outline: none;
+  padding: 0 10px 9px 2px;
+  font-size: 1.5rem;
+  width: 100%;
+  font-family: "alliance-regular";
+}
+
+.quote-form .select-div {
+  margin: 10px 0 35px 0;
 }

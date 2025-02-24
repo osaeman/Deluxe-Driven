@@ -14,35 +14,31 @@
   }
 
   .heading-4 {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
   }
   .heading-2 {
     font-size: 3.9rem;
     line-height: 4.3rem;
   }
   /* --------------------------------- */
-  .header-flexbox {
-    width: 92%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+
+  .header-nav nav {
+    width: 550px;
+    padding: 0 40px;
   }
-  .header-logo-mob {
-    display: block;
+  .header-logo > a > img {
+    width: 95px;
+    height: 65px;
   }
-  .header-logo-mob > a > img {
-    width: 110px;
-  }
-  .header-nav {
-    display: none;
+  .header-nav nav > span > a {
+    font-size: 1.4rem;
   }
 
-  .hamburger-btn {
-    display: block;
-    font-size: 2.7rem;
-    cursor: pointer;
+  .header-nav nav > span {
+    padding: 14px 0;
+  }
+  .sub-menu-dropdown {
+    top: 55px;
   }
   .hero-section {
     height: 620px;
@@ -55,11 +51,33 @@
     font-size: 1.8rem;
     letter-spacing: 1px;
   }
-
+  .chauffeuring-section {
+    margin: 110px auto;
+  }
+  .call-us-at-section {
+    margin: 80px auto;
+  }
+  .cover-area-section {
+    margin: 80px auto;
+  }
+  .steps-section {
+    margin: 110px auto;
+  }
+  .social-media-section {
+    margin: 110px auto 0 auto;
+  }
   .services-section-slide-content p {
     font-size: 1.6rem;
   }
 
+  .footer-top-left img {
+    width: 140px;
+    height: 110px;
+    margin: 0 auto;
+  }
+  .footer-top {
+    grid-column-gap: 50px;
+  }
   /*-------------- Contact Page --------------*/
   /*------- Terms, Privacy, Client Safety Notice Page-------- */
   .term-text-section {
@@ -103,8 +121,56 @@
     font-size: 3.3rem;
     line-height: 3.7rem;
   }
-
+  /* --------------Margins-------------- */
+  .brands-section {
+    margin: 10px auto 0 auto;
+  }
+  footer {
+    margin: 90px auto 0 auto;
+  }
+  .about-text-section {
+    margin: 20px auto 40px auto;
+  }
+  .text-half-section {
+    margin: 0 auto 80px auto;
+  }
+  .our-chauffeurs-section {
+    margin: 0 auto;
+  }
+  .services-text-section {
+    margin: 20px auto 40px auto;
+  }
+  .london-airports-section {
+    margin: 80px auto 90px auto;
+  }
+  .car-features-section {
+    margin: 70px auto 50px auto;
+  }
   /* ---------------------------------------- */
+  .header-flexbox {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-logo-mob {
+    display: block;
+  }
+  .header-logo-mob > a > img {
+    width: 100px;
+    height: 70px;
+  }
+  .header-nav {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: block;
+    font-size: 2.7rem;
+    cursor: pointer;
+  }
   header {
     background-color: transparent;
     position: absolute;
@@ -237,6 +303,20 @@
   .social-media-section-grid-flex-item div {
     height: 230px;
   }
+  .footer-top-left img {
+    width: 110px;
+    height: 80px;
+    margin: 0 auto;
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: 22% 78%;
+  }
+  .footer-top-right-nav nav a {
+    font-size: 1.4rem;
+    line-height: 23px;
+    margin-top: 5px;
+  }
   /* ------- Contact page -------- */
   .contact-section-grid {
     grid-template-columns: 1fr;
@@ -248,9 +328,21 @@
   /*------- Terms, Privacy, Client Safety Notice Page-------- */
   /*------------- Cars Page------------------ */
   .top-section-cars > div > img {
+    height: 410px;
+  }
+  .top-section > div > img {
     height: 370px;
   }
-
+  .term-text-section h3 {
+    font-size: 2rem;
+    letter-spacing: 0.1px;
+    text-align: left;
+  }
+  .term-text-section h4 {
+    font-size: 1.85rem;
+    letter-spacing: 0.1px;
+    text-align: left;
+  }
   .overlay .gallery-collection-card-carName > h5 {
     transform: translateX(0);
     font-size: 1.7rem;
@@ -321,7 +413,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 50px;
   }
   .RL-split-section-grid-left > div h1,
   .RL-split-section-grid-left > div p {
@@ -357,12 +449,14 @@
   .RL-split-section-grid-left p span {
     display: none;
   }
-  .cta-btn-style-3 a {
+  .cta-btn-style-3 a,
+  .cta-btn-style-3 span {
     font-size: 1.3rem;
     padding: 7px 20px;
     column-gap: 15px;
   }
-  .cta-btn-style-3 a i {
+  .cta-btn-style-3 a i,
+  .cta-btn-style-3 span i {
     background-color: var(--white-clr);
     border-radius: 50%;
     padding: 6px 7px;
@@ -453,14 +547,59 @@
     line-height: 3.8rem;
   }
   .heading-4 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
+
   .heading-2 {
     font-size: 3.6rem;
     line-height: 4rem;
   }
 
-  /* ------------------------------------ */
+  /* -------------Margins----------------------- */
+  .about-text-section {
+    margin: 0 auto 40px auto;
+  }
+  .services-text-section {
+    margin: 0 auto 40px auto;
+  }
+  .text-half-section {
+    margin: 0 auto 60px auto;
+  }
+  .chauffeuring-section {
+    margin: 70px auto;
+  }
+  .call-us-at-section {
+    margin: 60px auto;
+  }
+  .cover-area-section {
+    margin: 60px auto;
+  }
+  .steps-section {
+    margin: 80px auto;
+  }
+  .social-media-section {
+    margin: 80px auto 0 auto;
+  }
+
+  footer {
+    margin: 80px auto 0 auto;
+  }
+  .contact-section {
+    margin: 0 auto;
+  }
+  .gallery-section {
+    padding: 80px 0 80px 0;
+    margin: 50px auto 0 auto;
+  }
+  .london-airports-section {
+    margin: 60px auto 70px auto;
+  }
+
+  /*--------------------------------------------  */
+  .header-logo-mob > a > img {
+    width: 80px;
+    height: 60px;
+  }
   .hero-section {
     height: 480px;
     margin-top: 0;
@@ -529,8 +668,8 @@
     height: 360px;
   }
   .chauffeuring-section-flex > div p {
-    font-size: 1.6rem;
-    line-height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
   }
 
   .services-section-slide-content p {
@@ -595,9 +734,6 @@
     grid-template-columns: 1fr;
   }
 
-  .values-section {
-    margin: 120px auto;
-  }
   .values-section-top-flex {
     flex-direction: column;
     column-gap: 0;
@@ -635,9 +771,11 @@
     padding: 0 0 25px 0;
     grid-column-gap: 0;
     grid-row-gap: 20px;
+    padding-top: 50px !important;
   }
   .footer-top-left img {
-    width: 250px;
+    width: 110px;
+    height: 80px;
     margin: 0 auto;
   }
   .footer-top-left {
@@ -661,33 +799,60 @@
   .footer-top-right > .footer-top-right-nav:nth-of-type(3) nav {
     justify-content: flex-end;
   }
-
-  .footer-top-right-nav nav a {
+  /* -------------Quote Page------------ */
+  .quote-section {
+    padding: 35px 25px;
+  }
+  .quote-form input[type="text"],
+  .quote-form input[type="email"],
+  .quote-form input[type="tel"],
+  .quote-form input[type="number"],
+  .quote-form input[type="date"] {
     font-size: 1.4rem;
-    line-height: 23px;
-    margin-top: 5px;
+    margin: 1px 0 18px 0;
+  }
+  .quote-form label {
+    font-size: 1.5rem;
+  }
+  .quote-form-inputset {
+    flex-direction: column;
+
+    column-gap: 0;
+  }
+  .quote-section p {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  .quote-form .select-div {
+    margin: 10px 0 18px 0;
   }
   /* -------------- Contact Page----------------- */
   .top-section div > span {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .top-section > div > img {
-    height: 40vh;
+    height: 330px;
   }
   .contact-section > p {
     margin: 5px 0 40px 0;
     color: var(--white-clr);
     font-size: 1.4rem;
   }
+  .contact-section-grid-right div {
+    margin-bottom: 7px;
+  }
   /*------- Terms, Privacy, Client Safety Notice Page-------- */
+  .top-section-cars > div > img {
+    height: 350px;
+  }
   .term-text-section h3 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     letter-spacing: 0.1px;
     text-align: left;
   }
   .term-text-section h4 {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     letter-spacing: 0.1px;
     text-align: left;
   }
@@ -767,16 +932,54 @@
     line-height: 4.2rem;
   }
   .heading-4 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
   .heading-2 {
     font-size: 2.6rem;
     line-height: 3rem;
   }
-
+  /* -------------Margins----------------------- */
+  .about-text-section {
+    margin: 25px auto 40px auto;
+  }
+  .chauffeuring-section {
+    margin: 50px auto;
+  }
+  .call-us-at-section {
+    margin: 50px auto;
+  }
+  .cover-area-section {
+    margin: 50px auto;
+  }
+  .steps-section {
+    margin: 60px auto;
+  }
+  .social-media-section {
+    margin: 60px auto 0 auto;
+  }
+  footer {
+    margin: 70px auto 0 auto;
+  }
+  .our-chauffeurs-section {
+    margin: 20px auto 40px auto;
+  }
+  .gallery-section {
+    padding: 60px 0 60px 0;
+    margin: 40px auto 0 auto;
+  }
+  .brands-section-cars-page {
+    width: 89%;
+  }
+  .services-text-section {
+    margin: 25px auto 40px auto;
+  }
+  .london-airports-section {
+    margin: 55px auto 55px auto;
+  }
   /* ------------------------------------------ */
-  .header-logo > a > img {
-    width: 130px;
+  .header-logo-mob > a > img {
+    width: 70px;
+    height: 50px;
   }
   .hamburger-btn {
     font-size: 2.4rem;
@@ -811,8 +1014,8 @@
     height: 280px;
   }
   .chauffeuring-section-flex > div p {
-    font-size: 1.5rem;
-    line-height: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
   }
 
   .services-section-slide-content p {
@@ -939,6 +1142,9 @@
   }
   /* ---------------- Contact Page ------------------- */
 
+  .top-section div > span {
+    font-size: 1.2rem;
+  }
   .contact-form-inputset {
     display: flex;
     flex-direction: column;
@@ -947,6 +1153,7 @@
     column-gap: 0;
     row-gap: 0;
   }
+
   .contact-section-grid-right div h5 {
     font-size: 1.7rem;
   }
@@ -954,6 +1161,9 @@
     font-size: 1.35rem;
   }
   /*------- Terms, Privacy, Client Safety Notice Page-------- */
+  .top-section-cars > div > img {
+    height: 300px;
+  }
   /* --------------Cars Page --------------*/
   /*--------------  Chauffeurs Page --------------- */
   .our-chauffeurs-section-grid {
@@ -989,12 +1199,17 @@
     line-height: 18px;
     font-size: 1.3rem;
   }
-
+  .RL-split-section-grid-left > div {
+    padding-top: 100px;
+  }
+  .RL-split-section-grid-left > div > div {
+    width: 100%;
+  }
   .RL-split-section-grid-left > div > div span {
     font-size: 1.4rem;
   }
   .RL-split-section-grid-left {
-    min-height: 430px;
+    min-height: 410px;
   }
   /*----------- Services Page----------- */
   .services-text-section div p {
