@@ -307,8 +307,9 @@ header {
   position: relative;
 }
 .sub-menu-dropdown {
+  border-top: 2px solid black;
   position: absolute;
-  top: 59px;
+  top: 55px;
   background-color: var(--dark-gray);
   z-index: 10;
   padding: 18px 25px;
@@ -1545,7 +1546,7 @@ header {
   color: white;
   line-height: 22px;
   padding: 20px 15px 10px 10px;
-  text-align: justify;
+  text-align: left !important;
 }
 /* Services Text Section in Event Chauffeur Service Page, Business Chauffeur Service Page, Airport Chauffeur Service Page, Personal Chauffeur Service Page */
 /* ------------- Services Text Section------------- */

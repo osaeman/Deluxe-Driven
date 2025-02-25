@@ -980,6 +980,7 @@
   }
   .featured-services-section-grid-item div h6 {
     font-size: 1.9rem;
+    line-height: 24px;
   }
   /* -------------Airport Chauffeur Page------------- */
 
@@ -1461,5 +1462,13 @@
   .RL-split-section-grid-left > div > div > span {
     font-size: 1.25rem;
     line-height: 1.9rem;
+  }
+  /* -------------All Services Page ----------------*/
+  .featured-services-section-grid-item div h6 {
+    font-size: 1.8rem;
+    line-height: 23px;
+  }
+  .featured-services-section-grid-item div img {
+    height: 240px;
   }
 }
