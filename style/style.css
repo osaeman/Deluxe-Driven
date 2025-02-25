@@ -175,7 +175,7 @@ a {
   font-weight: 600;
   letter-spacing: 1.7px;
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
   height: fit-content;
   padding-right: 20px;
   width: fit-content;
@@ -1189,8 +1189,8 @@ header {
   margin-top: 0;
 }
 .gallery-section {
-  padding: 100px 0 100px 0;
-  margin: 100px auto 0 auto;
+  padding: 80px 0 80px 0;
+  margin: 80px auto 0 auto;
   background-color: var(--dark-gray);
 }
 .gallery-section h2 {
@@ -1202,7 +1202,7 @@ header {
 
 .gallery-collection {
   grid-column-gap: 60px;
-  grid-row-gap: 90px;
+  grid-row-gap: 60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   height: 100%;
@@ -1219,8 +1219,14 @@ header {
   height: 200px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1); /* Safari */
+  -moz-transform: scale(1); /* Mozilla */
   transform: scale(1);
   margin: 0 auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .overlay {
@@ -1739,7 +1745,7 @@ header {
 
 .about-text-section div p {
   margin-bottom: 10px;
-  line-height: 28px;
+  line-height: 26px;
   color: var(--light-gray);
   font-size: 1.7rem;
   text-align: justify;
@@ -1864,10 +1870,10 @@ header {
 }
 .top-section > div > div {
   position: absolute;
-  top: 75%;
+  top: 79%;
   left: 0;
   right: 0;
-  transform: translateY(-75%);
+  transform: translateY(-79%);
 }
 
 /* -----------Modification in Hero Section of Cars Page and All Cars pages----------------- */
@@ -1883,7 +1889,6 @@ header {
 .term-text-section {
   color: var(--white-clr);
   margin: 0 auto 0 auto;
-  text-align: justify;
 }
 .term-text-section h3 {
   color: var(--white-clr);

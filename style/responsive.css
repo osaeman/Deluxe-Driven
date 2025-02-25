@@ -362,6 +362,14 @@
     height: 30px;
     font-size: 1.5rem;
   }
+  .gallery-collection {
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+  }
+  .gallery-section {
+    padding: 60px 0 60px 0;
+    margin-top: 70px;
+  }
   /*--------------  Chauffeurs Page --------------- */
   .our-chauffeurs-section-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -564,7 +572,7 @@
   }
   .heading-5 {
     font-size: 2.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .h1-small {
     letter-spacing: 1.5px;
@@ -617,7 +625,7 @@
     margin: 0 auto;
   }
   .gallery-section {
-    padding: 80px 0 80px 0;
+    padding: 70px 0 70px 0;
     margin: 50px auto 0 auto;
   }
   .london-airports-section {
@@ -814,10 +822,9 @@
   }
   .footer-top {
     grid-template-columns: 100%;
-    padding: 0 0 25px 0;
+    padding: 50px 0 25px 0;
     grid-column-gap: 0;
     grid-row-gap: 20px;
-    padding-top: 50px !important;
   }
   .footer-top-left img {
     width: 110px;
@@ -895,18 +902,20 @@
   }
 
   /*------- Terms, Privacy, Client Safety Notice Page-------- */
+  .top-section > div > div {
+    top: 87%;
+    transform: translateY(-87%);
+  }
   .top-section-cars > div > img {
     height: 380px;
   }
   .term-text-section h3 {
     font-size: 1.8rem;
     letter-spacing: 0.1px;
-    text-align: left;
   }
   .term-text-section h4 {
     font-size: 1.7rem;
     letter-spacing: 0.1px;
-    text-align: left;
   }
   .term-text-section p {
     font-size: 1.5rem;
@@ -919,15 +928,20 @@
   .term-text-section ul li b {
     font-size: 1.75rem;
   }
+  .term-text-section div {
+    margin-top: 22px;
+  }
   /* ---------------- Cars Page --------------- */
   .gallery-collection {
     grid-column-gap: 0;
     grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 50px;
   }
   .gallery-collection-card img {
     object-fit: cover;
     height: 100%;
   }
+
   /* ------ Split Car Section ---------*/
 
   .split-car-section-grid-right img {
@@ -972,6 +986,14 @@
     font-size: 1.5rem;
     line-height: 2.1rem;
   }
+  /* ----------About Page----------- */
+  .RL-split-section .cta-btn-style-1 {
+    margin: 0 0;
+  }
+  .about-text-section div p {
+    text-align: left;
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -986,7 +1008,7 @@
   }
   .heading-5 {
     font-size: 2rem;
-    margin-bottom: 25px;
+    margin-bottom: 19px;
   }
   .heading-3 {
     font-size: 1.9rem;
@@ -1211,10 +1233,10 @@
   .footer-top-right {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 26px;
+    padding-bottom: 6px;
     width: 92%;
     margin: 0 auto;
-    grid-row-gap: 44px;
+    grid-row-gap: 34px;
   }
   .footer-top-right > .footer-top-right-nav:first-of-type {
     text-align: center;
@@ -1266,18 +1288,46 @@
     column-gap: 0;
     row-gap: 0;
   }
-
+  .contact-section-grid-right div {
+    padding: 16px;
+  }
   .contact-section-grid-right div h5 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   .contact-section-grid-right div p {
+    font-size: 1.3rem;
+  }
+  .quote-form label,
+  .contact-form label {
+    font-weight: 600;
+    color: white !important;
+    letter-spacing: 1.4px;
     font-size: 1.35rem;
+  }
+  .submit-btn {
+    padding: 9px 20px;
+    font-size: 1.35rem;
+    letter-spacing: 1.4px;
   }
   /*------- Terms, Privacy, Client Safety Notice Page-------- */
   .top-section-cars > div > img {
     height: 350px;
   }
+  .top-section > div > img {
+    height: 300px;
+  }
+
   /* --------------Cars Page --------------*/
+  .gallery-collection {
+    grid-row-gap: 35px;
+  }
+  .gallery-collection-card:hover img {
+    transition: none;
+    transform: scale(1);
+  }
+  .top-section-cars-page > div > img {
+    object-position: 50% 100%;
+  }
   /*--------------  Chauffeurs Page --------------- */
   .our-chauffeurs-section-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -1300,6 +1350,7 @@
   .about-text-section div p {
     line-height: 20px;
     font-size: 1.4rem;
+    text-align: left;
   }
   .text-half-section-grid-left {
     padding: 20px 20px;
