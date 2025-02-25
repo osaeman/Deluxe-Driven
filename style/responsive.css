@@ -953,7 +953,7 @@
     grid-row-gap: 50px;
   }
   .gallery-collection-card img {
-    object-fit: cover;
+    object-fit: contain;
     height: 100%;
   }
 
