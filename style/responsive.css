@@ -552,15 +552,15 @@
 }
 @media (max-width: 786px) {
   .heading-3 {
-    font-size: 2.6rem;
-    margin-bottom: 21px;
+    font-size: 2.45rem;
+    margin-bottom: 19px;
   }
   .heading-3::after {
     top: 105%;
   }
   .h1-large {
-    font-size: 5.1rem;
-    line-height: 5.3rem;
+    font-size: 4.8rem;
+    line-height: 5rem;
   }
   .heading-5 {
     font-size: 2.2rem;
@@ -581,7 +581,6 @@
   }
   .para {
     font-size: 1.5rem;
-
     line-height: 22px;
   }
 
@@ -703,8 +702,8 @@
   }
 
   .services-section-slide-content p {
-    font-size: 1.5rem;
-    line-height: 20px;
+    font-size: 1.45rem;
+    line-height: 19px;
     width: 60%;
   }
   .services-section-slide-content-solutions div {
@@ -746,11 +745,25 @@
   .swiper-pagination-fraction {
     bottom: 10px !important;
   }
+  .call-us-at-section-right h5 {
+    text-align: center;
+    width: 100%;
+  }
+  .call-us-at-section-right h6 {
+    text-align: center;
+    width: 100%;
+  }
+  .call-us-at-section-right p {
+    text-align: center;
+  }
+  .cta-btn-style-1 {
+    margin: 0 auto;
+  }
   .call-us-at-section-grid {
     display: flex;
     flex-direction: column;
     column-gap: 0;
-    padding: 5px 0 40px 0;
+    padding: 5px 0 35px 0;
   }
   .call-us-at-section-left img {
     width: 300px;
@@ -795,7 +808,10 @@
     padding: 14px 0;
     font-size: 1.2rem;
   }
-
+  .footer-top-right-nav span {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
   .footer-top {
     grid-template-columns: 100%;
     padding: 0 0 25px 0;
@@ -965,16 +981,21 @@
     margin-bottom: 25px;
   }
   .heading-3 {
-    font-size: 2.15rem;
+    font-size: 1.9rem;
     margin-bottom: 17px;
+    line-height: 2.6rem;
   }
   .heading-3::after {
     top: 105%;
   }
 
   .h1-large {
-    font-size: 4rem;
-    line-height: 4.2rem;
+    font-size: 3.25rem;
+    line-height: 3.4rem;
+  }
+  .h1-large::after {
+    width: 120px;
+    height: 2px;
   }
   .heading-4 {
     font-size: 2rem;
@@ -982,6 +1003,12 @@
   .heading-2 {
     font-size: 2.6rem;
     line-height: 3rem;
+  }
+  .para {
+    font-size: 1.4rem;
+    line-height: 19px;
+    font-weight: 400;
+    color: var(--light-gray);
   }
   /* -------------Margins----------------------- */
   .about-text-section {
@@ -1039,7 +1066,8 @@
     width: 85%;
   }
   .hero-section-text p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    line-height: 1.65rem;
   }
 
   .cta-btn > a {
@@ -1068,8 +1096,8 @@
   .services-section-slide-content p {
     font-size: 1.3rem;
     line-height: 16px;
-    width: 70%;
-    margin-top: 15px;
+    width: 75%;
+    margin-top: 0;
   }
   .services-section-slide-content-solutions div {
     padding: 10px 15px;
@@ -1082,33 +1110,44 @@
     letter-spacing: 1.4px;
   }
   .services-section-slide-content {
-    left: 25px;
+    left: 17px;
   }
   .services-section {
     width: 100%;
-    height: 400px;
+    height: 365px;
   }
   .services-section {
-    height: 400px;
+    height: 365px;
   }
   .services-section.swiper {
-    height: 400px;
+    height: 365px;
   }
   .services-section-slide {
-    height: 400px;
+    height: 365px;
   }
   .services-section-slide > img {
-    height: 400px;
+    height: 365px;
+  }
+  .call-us-at-section-grid {
+    padding: 0 0 25px 0;
   }
   .call-us-at-section-right h5 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
   }
   .call-us-at-section-right h6 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 3px;
+    text-align: center;
+    width: 100%;
   }
   .call-us-at-section-right p {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
+    text-align: center;
+  }
+  .cta-btn-style-1 {
+    margin: 0 auto;
   }
   .cover-area-section-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -1132,12 +1171,12 @@
     margin: 60px auto;
   }
   .steps-section-grid-flex-item h6 {
-    font-size: 1.55rem;
-    margin-bottom: 5px;
+    font-size: 1.4rem;
+    margin-bottom: 7px;
   }
 
   .steps-section-grid-flex-item p {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
 
   .steps-section-grid-flex-item {
@@ -1147,9 +1186,17 @@
   .social-media-section-grid-flex-item div {
     height: 200px;
   }
+  .values-section-bottom-grid div h6 {
+    margin: 18px 0 8px 0;
+    font-size: 1.55rem;
+    letter-spacing: 1.4px;
+  }
+  .values-section-bottom-grid div p {
+    font-size: 1.4rem;
+  }
 
   .values-section-bottom-grid {
-    margin-top: 50px;
+    margin-top: 25px;
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -1193,6 +1240,10 @@
   }
   .footer-top-right-nav:last-of-type > nav > a {
     border-radius: 5px;
+  }
+  .footer-top-right-nav span {
+    font-size: 1.55rem;
+    margin-bottom: 5px;
   }
   /* ---------------- Contact Page ------------------- */
 
