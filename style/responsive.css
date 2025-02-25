@@ -110,7 +110,7 @@
   }
   .heading-5 {
     font-size: 2.4rem;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
   .h1-small {
     letter-spacing: 1.5px;
@@ -534,6 +534,10 @@
     line-height: 20px;
     padding: 5px 5px 5px 10px;
   }
+  .services-text-section div p {
+    text-align: left;
+    font-size: 1.5rem;
+  }
   /* ----------Airport Chauffeur Page----------- */
   .extra-services-section-grid {
     display: flex;
@@ -561,6 +565,12 @@
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+  }
+  /* Airport Chauffeur Page */
+  .london-airports-section div p {
+    font-size: 1.5rem;
+    line-height: 22px;
+    text-align: left;
   }
 }
 @media (max-width: 786px) {
@@ -961,7 +971,7 @@
 
   .services-text-section div p {
     font-size: 1.5rem;
-    line-height: 22px;
+    line-height: 21px;
   }
   .featured-services-section-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -972,12 +982,12 @@
     font-size: 1.9rem;
   }
   /* -------------Airport Chauffeur Page------------- */
-  .london-airports-section div p {
-    font-size: 1.5rem;
-    line-height: 22px;
-  }
+
   .london-airports-section div table {
     margin: 20px auto 0 auto;
+  }
+  .extra-services-section-grid-left div p {
+    font-size: 1.4rem;
   }
   /*------------ All Cars Section------------ */
   .car-features-section-grid {
@@ -1403,7 +1413,7 @@
   /*----------- Services Page----------- */
   .services-text-section div p {
     font-size: 1.4rem;
-    line-height: 22px;
+    line-height: 20px;
   }
   .featured-services-section-grid-item p {
     color: var(--light-gray);
