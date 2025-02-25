@@ -1623,14 +1623,18 @@ header {
   font-size: 1.8rem;
   font-weight: 800;
   letter-spacing: 1.7px;
+  display: block;
 }
 .RL-split-section-grid-left > div > div > span i {
   color: var(--golden-clr);
 }
 .RL-split-section-grid-left div > div > p {
-  margin: 25px 0 25px 0;
+  margin: 20px 0 25px 0;
   color: var(--light-gray);
   line-height: 28px;
+}
+.RL-split-section-grid-left-chauffeurs div div p {
+  margin: 10px 0 25px 0;
 }
 .RL-split-section-chauffeur .heading-2::after {
   display: none;

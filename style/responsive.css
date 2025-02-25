@@ -964,6 +964,14 @@
   .car-features-section-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  /* -------------Chauffeur Page---------- */
+  .RL-split-section-grid-left-chauffeurs div div p {
+    margin: 5px 0 25px 0;
+  }
+  .our-chauffeurs-section-grid-item p {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1286,7 +1294,7 @@
     font-size: 1.7rem;
   }
   .our-chauffeurs-section-grid-item p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   /*--------------- About Page ------------------*/
   .about-text-section div p {
@@ -1363,5 +1371,13 @@
   .split-car-section-grid-left div > div > p {
     font-size: 1.45rem;
     line-height: 23px;
+  }
+  /* -------------Chauffeur Page---------- */
+  .RL-split-section-grid-left-chauffeurs div div p {
+    margin: 5px 0 25px 0;
+  }
+  .RL-split-section-grid-left > div > div > span {
+    font-size: 1.25rem;
+    line-height: 1.9rem;
   }
 }
