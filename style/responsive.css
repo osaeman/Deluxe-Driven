@@ -333,6 +333,10 @@
   .top-section > div > img {
     height: 385px;
   }
+  .top-section > div > div {
+    top: 85%;
+    transform: translateY(-85%);
+  }
   .term-text-section h3 {
     font-size: 2rem;
     letter-spacing: 0.1px;
@@ -510,6 +514,7 @@
   .split-car-section-grid-left > div > div {
     width: 100%;
     padding-right: 0;
+    text-align: left;
   }
 
   .split-car-section-grid-left div > div > p {
@@ -978,6 +983,15 @@
   .car-features-section-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .split-car-section-grid-left div > div > p {
+    font-size: 1.45rem;
+    line-height: 23px;
+  }
+
+  .split-car-section-grid-left > div > div {
+    text-align: left;
+  }
+
   /* -------------Chauffeur Page---------- */
   .RL-split-section-grid-left-chauffeurs div div p {
     margin: 5px 0 25px 0;
@@ -1410,6 +1424,13 @@
     grid-row-gap: 5px;
   }
   /* -----------All Cars Section------------ */
+  .car-features-section-grid {
+    grid-column-gap: 7px;
+    grid-row-gap: 7px;
+  }
+  .car-features-section-grid-item {
+    padding: 16px 7px;
+  }
   .car-features-section-grid-item img {
     width: 30px;
   }
