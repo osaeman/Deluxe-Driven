@@ -1076,7 +1076,7 @@ header {
 }
 
 .values-section-bottom-grid {
-  margin-top: 60px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
@@ -1166,7 +1166,7 @@ header {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   padding: 27px 12px;
 }
@@ -1183,7 +1183,24 @@ header {
   font-size: 1.2rem;
   color: var(--light-gray);
 }
+.driver-requirement-section img {
+  width: 120px;
+  height: 110px;
+  object-fit: contain;
+  object-position: center;
+}
+.driver-requirement-section .car-features-section-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+}
+.driver-requirement-section .car-features-section-grid-item h3 {
+  margin: 18px 0 0 0;
+}
 
+.driver-requirement-section .car-features-section-grid-item {
+  padding: 18px 6px;
+}
 /* ------------- Featured Cars Section ---------------- */
 /* ------------ Gallery Section ----------- */
 .footer-mt {
@@ -1745,10 +1762,13 @@ header {
 
 .about-text-section div p {
   margin-bottom: 10px;
-  line-height: 26px;
+  line-height: 25px;
   color: var(--light-gray);
-  font-size: 1.7rem;
-  text-align: justify;
+  font-size: 1.6rem;
+}
+
+.about-text-section div p span {
+  color: var(--golden-clr);
 }
 /* ------- Text Half Section in About Page , Personal Chauffeur Page --------- */
 /* -----------Text Half Section------------ */
