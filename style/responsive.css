@@ -927,6 +927,10 @@
     font-size: 1.5rem;
   }
 
+  .text-half-section-grid-left span {
+    line-height: 22px;
+    font-size: 1.5rem;
+  }
   /*------- Terms, Privacy, Client Safety Notice Page-------- */
   .top-section > div > div {
     top: 87%;

@@ -1795,11 +1795,16 @@ header {
 
 .text-half-section-grid-left p {
   margin-bottom: 10px;
-  line-height: 26px;
+  line-height: 25px;
   color: var(--light-gray);
   font-size: 1.7rem;
 }
-
+.text-half-section-grid-left span {
+  margin-bottom: 10px;
+  line-height: 25px;
+  color: var(--golden-clr);
+  font-size: 1.7rem;
+}
 /* ----------  Chauffeur Page  ----------- */
 /* ------------- Our Chauffeurs Section ------------- */
 .our-chauffeurs-section {
