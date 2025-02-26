@@ -538,6 +538,8 @@ header {
   margin: 20px 0 25px 0;
   font-size: 1.8rem;
   letter-spacing: 1.2px;
+  color: var(--golden-clr);
+  font-weight: 600;
 }
 .cta-btn {
   display: block;
@@ -2107,6 +2109,11 @@ header {
   color: var(--dark-gray);
   font-size: 1.5rem;
   font-weight: 600;
+}
+.contact-section-grid-right div p b {
+  font-weight: 900;
+  font-family: "alliance-text", serif;
+  color: black;
 }
 .cta-btn-style-4 {
   display: block;
