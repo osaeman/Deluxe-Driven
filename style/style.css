@@ -540,6 +540,7 @@ header {
   letter-spacing: 1.2px;
   color: var(--golden-clr);
   font-weight: 600;
+  text-transform: uppercase;
 }
 .cta-btn {
   display: block;
