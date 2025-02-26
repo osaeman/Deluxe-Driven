@@ -40,6 +40,7 @@
     />
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="../style/responsive.css" />
+    <script src="www.cdserver1.com/Scripts/iframeResizer.min.js"></script>
   </head>
   <body>
     <!------------ Header -------------->
@@ -197,7 +198,7 @@
     </section>
 
     <!-------------- Get A Quote Form----------------->
-    <section class="quote-section">
+    <!-- <section class="quote-section">
       <form action="" class="quote-form">
         <p>Fill out the details and get a Quote</p>
         <div class="quote-form-inputset">
@@ -277,15 +278,20 @@
           </div>
         </div>
 
-        <!-- <button type="submit" class="submit-btn">
-          Send <i class="fal fa-arrow-right"></i>
-        </button> -->
         <button class="cta-btn-style-3" type="submit">
           <span> Send <i class="fal fa-arrow-right"></i></span>
         </button>
       </form>
+    </section> -->
+    <section class="booking-form container">
+      <div>
+        <iframe
+          id="myiframe"
+          src="https://www.cdserver1.com/WebBooking/WebBooking5.aspx?ID=ce68b525-bef6-4743-bbc3-fb04d90a4843&THEME=1"
+          frameborder="0"
+        ></iframe>
+      </div>
     </section>
-
     <!------------ Footer ------------->
     <footer>
       <div class="footer-top container">
@@ -333,5 +339,11 @@
       </div>
     </footer>
     <script src="../js/app.js"></script>
+    <script type="text/javascript">
+      var iframes = iFrameResize(
+        { log: false, checkOrigin: false },
+        "#myIframe"
+      );
+    </script>
   </body>
 </html>
