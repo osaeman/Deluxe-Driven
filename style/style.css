@@ -208,7 +208,7 @@ header {
 }
 .header-logo > a > img {
   width: 100px;
-  height: 70px;
+  height: 95px;
 }
 .header-flexbox {
   padding-top: 10px;
@@ -2171,7 +2171,7 @@ footer {
 }
 .footer-top-left img {
   width: 150px;
-  height: 120px;
+  height: 150px;
   margin: 0 auto;
 }
 .footer-top-right {
