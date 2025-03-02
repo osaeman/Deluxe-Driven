@@ -2238,84 +2238,8 @@ footer {
   color: var(--light-gray);
 }
 
-/*---------------  Quote Page ---------------- */
-.quote-section {
-  max-width: 1000px;
-  width: 92%;
-  margin: 0 auto;
-  background-image: url("../assets/pics/17.jpg");
-  border-radius: 10px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 50px 40px;
-  position: relative;
-}
-.quote-section p {
-  color: var(--golden-clr);
-  font-size: 1.8rem;
-  margin-bottom: 30px;
-  letter-spacing: -0.6px;
-  font-family: "Inter", serif;
-}
-.quote-section::before {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  content: "";
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
-}
-.quote-form {
-  position: relative;
-  z-index: 10;
-}
-.quote-form-inputset {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 20px;
-}
-
-.quote-form-inputset div {
-  width: 100%;
-}
-
-.quote-form input[type="text"],
-.quote-form input[type="email"],
-.quote-form input[type="tel"],
-.quote-form input[type="number"],
-.quote-form input[type="date"] {
-  border: none;
-  background: transparent;
-  border-bottom: 2px solid var(--light-gray);
-  outline: none;
-  padding: 0 10px 9px 2px;
-  font-size: 1.6rem;
-  font-family: "alliance-regular";
-  margin: 10px 0 35px 0;
-  width: 100%;
-  color: var(--white-clr);
-}
-
-.quote-form select {
-  border: none;
-  background: transparent;
-  border-bottom: 2px solid var(--light-gray);
-  outline: none;
-  padding: 0 10px 9px 2px;
-  font-size: 1.5rem;
-  width: 100%;
-  font-family: "alliance-regular";
-}
-
-.quote-form .select-div {
-  margin: 10px 0 35px 0;
-}
-
+/*--------------- Booking Page -------------- */
+/* ----- Booking Form ------ */
 .booking-form div {
   max-width: 1000px;
   width: 100%;
@@ -2326,10 +2250,4 @@ footer {
   min-width: 100%;
   height: 100%;
   border: none;
-}
-
-/*  Trust Pilot Reviews */
-.trustpilot-widget {
-  background-color: red;
-  color: white;
 }

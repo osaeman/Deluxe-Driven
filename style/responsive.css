@@ -878,33 +878,7 @@
   .footer-top-right > .footer-top-right-nav:nth-of-type(3) nav {
     justify-content: flex-end;
   }
-  /* -------------Quote Page------------ */
-  .quote-section {
-    padding: 35px 25px;
-  }
-  .quote-form input[type="text"],
-  .quote-form input[type="email"],
-  .quote-form input[type="tel"],
-  .quote-form input[type="number"],
-  .quote-form input[type="date"] {
-    font-size: 1.4rem;
-    margin: 1px 0 18px 0;
-  }
-  .quote-form label {
-    font-size: 1.5rem;
-  }
-  .quote-form-inputset {
-    flex-direction: column;
 
-    column-gap: 0;
-  }
-  .quote-section p {
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-  }
-  .quote-form .select-div {
-    margin: 10px 0 18px 0;
-  }
   /* -------------- Contact Page----------------- */
   .top-section div > span {
     font-size: 1.2rem;
