@@ -2327,3 +2327,9 @@ footer {
   height: 100%;
   border: none;
 }
+
+/*  Trust Pilot Reviews */
+.trustpilot-widget {
+  background-color: red;
+  color: white;
+}

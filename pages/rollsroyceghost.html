@@ -40,6 +40,10 @@
     />
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="../style/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!------------ Header -------------->
@@ -244,9 +248,28 @@
             src="../assets/pics/roll royce ghost.jpg"
             alt="Rolls Royce Ghost"
           />
+          <!-- <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide heroSwiper-slide">
+                <img src="../assets/pics/1.jpg" alt="Hero Slider Img" />
+              </div>
+              <div class="swiper-slide heroSwiper-slide">
+                <img src="../assets/pics/4.jpg" alt="Hero Slider Img" />
+              </div>
+              <div class="swiper-slide heroSwiper-slide">
+                <img src="../assets/pics/8.jpg" alt="Hero Slider Img" />
+              </div>
+              <div class="swiper-slide heroSwiper-slide">
+                <img src="../assets/pics/5.jpg" alt="Hero Slider Img" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div> -->
         </div>
       </div>
     </section>
+
+    <!-- ----------------------------------------- -->
     <!-- <section class="car-section">
       <div class="car-section-grid">
         <div class="car-section-grid-left">
@@ -349,6 +372,13 @@
         </div>
         <div class="cover-area-section-grid-item">
           <div>
+            <h4>Hertfordshire</h4>
+            <span>Historic & Scenic</span>
+          </div>
+          <img src="../assets/pics/hertfordshire.jpg" alt="Hertfordshire" />
+        </div>
+        <div class="cover-area-section-grid-item">
+          <div>
             <h4>Bedfordshire</h4>
             <span>Tranquil Countryside</span>
           </div>
@@ -362,13 +392,6 @@
           </div>
 
           <img src="../assets/pics/buckhingamshire.jpg" alt="Buckinghamshire" />
-        </div>
-        <div class="cover-area-section-grid-item">
-          <div>
-            <h4>Hertfordshire</h4>
-            <span>Historic & Scenic</span>
-          </div>
-          <img src="../assets/pics/hertfordshire.jpg" alt="Hertfordshire" />
         </div>
       </div>
     </section>
@@ -422,5 +445,19 @@
       </div>
     </footer>
     <script src="../js/app.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // Hero Swiper
+      var swiper = new Swiper(".heroSwiper", {
+        autoplay: {
+          delay: 4000, // Delay between slides in milliseconds (3 seconds in this example)
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        loop: true,
+      });
+    </script>
   </body>
 </html>
