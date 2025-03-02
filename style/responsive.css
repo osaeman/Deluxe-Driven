@@ -27,8 +27,8 @@
     padding: 0 40px;
   }
   .header-logo > a > img {
-    width: 95px;
-    height: 85px;
+    width: 135px;
+    height: 135px;
   }
   .header-nav nav > span > a {
     font-size: 1.4rem;
@@ -159,8 +159,8 @@
     display: block;
   }
   .header-logo-mob > a > img {
-    width: 100px;
-    height: 86px;
+    width: 120px;
+    height: 120px;
   }
   .header-nav {
     display: none;
@@ -492,7 +492,7 @@
     background-image: url("../assets/pics/62.jpg");
   }
   .RL-split-section-grid-left-self {
-    background-image: url("../assets/pics/sekf\ drive\ hero\ img\ 2.jpg");
+    background-image: url("../assets/pics/13.jpg");
   }
   /* ------ Split Car Section ---------*/
 
@@ -660,8 +660,8 @@
 
   /*--------------------------------------------  */
   .header-logo-mob > a > img {
-    width: 80px;
-    height: 75px;
+    width: 110px;
+    height: 110px;
   }
   .hero-section {
     height: 480px;
@@ -1125,8 +1125,8 @@
   }
   /* ------------------------------------------ */
   .header-logo-mob > a > img {
-    width: 70px;
-    height: 63px;
+    width: 100px;
+    height: 100px;
   }
   .hamburger-btn {
     font-size: 2.4rem;
