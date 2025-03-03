@@ -192,36 +192,34 @@
         <form action="" class="contact-form">
           <div class="contact-form-inputset">
             <div>
-              <label class="para" for="">First Name</label> <br /><input
-                type="text"
-              />
+              <label class="para" for="">First Name</label> <br />
+              <input type="text" name="first_name" required />
             </div>
             <div>
-              <label class="para" for="">Last Name</label><br /><input
-                type="text"
-              />
+              <label class="para" for="">Last Name</label><br />
+              <input type="text" name="last_name" required />
             </div>
           </div>
           <div class="contact-form-input">
             <label class="para" for="">Email</label>
             <br />
-            <input type="email" />
+            <input type="email" name="email" required />
           </div>
 
           <div class="contact-form-inputset">
             <div>
               <label class="para" for="">Phone Number</label>
               <br />
-              <input type="tel" />
+              <input type="tel" name="phone" required />
             </div>
             <div>
               <label class="para" for="">Query Reason</label>
               <br />
               <div class="select-div">
-                <select name="reason" id="reason">
+                <select name="reason" id="reason" required>
                   <option>Choose One</option>
                   <option value="booking">Booking</option>
-                  <option value="inovice">Inovice</option>
+                  <option value="invoice">Invoice</option>
                   <option value="complaint">Complaint</option>
                   <option value="lost">Lost Item</option>
                 </select>
@@ -229,10 +227,10 @@
             </div>
           </div>
           <div class="contact-form-input">
-            <label class="para" for="">Preffered Form of Contact</label>
+            <label class="para" for="">Preferred Form of Contact</label>
             <br />
             <div class="select-div">
-              <select name="contact" id="contact">
+              <select name="contact" id="contact" required>
                 <option>Choose One</option>
                 <option value="phone">Phone</option>
                 <option value="email">Email</option>
@@ -242,7 +240,7 @@
           <div class="contact-form-input">
             <label class="para" for="">Type Your Query Here</label>
             <br />
-            <textarea name="" id="" rows="5"></textarea>
+            <textarea name="message" id="" rows="5" required></textarea>
           </div>
           <button type="submit" class="submit-btn">
             Submit <i class="fal fa-arrow-right"></i>
@@ -333,6 +331,27 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="../js/app.js"></script>
+    <script>
+      emailjs.init("YiFy6ddd5lC0ozmer");
+
+      const form = document.querySelector(".contact-form");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm("service_h2ehp58", "template_q99cxmi", this).then(
+          function () {
+            alert("Your message has been sent successfully!");
+            form.reset();
+          },
+          function (error) {
+            alert("Oops... " + JSON.stringify(error));
+            console.error("EmailJS Error:", error);
+          }
+        );
+      });
+    </script>
   </body>
 </html>
