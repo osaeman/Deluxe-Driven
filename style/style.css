@@ -1,7 +1,7 @@
 /* For Headings */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
-/* font-family: "DM Serif Display", serif; */
+/* @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+font-family: "DM Serif Display", serif; */
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 /* font-family: "Public Sans", serif; */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
@@ -50,6 +50,10 @@ html {
   font-family: "alliance-text";
   src: url("../fonts/Alliance-TextRegular.otf");
 }
+@font-face {
+  font-family: "gills-sans-nova-medium";
+  src: url("../fonts/Gill\ Sans\ Medium.otf");
+} /* font-family: "gills-sans-nova-medium", serif; */
 body {
   font-family: "alliance-light";
   font-size: 1.6rem;
@@ -88,7 +92,11 @@ a {
   width: 92%;
   margin: 0 auto;
 }
-
+.customize-container-cars {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
+}
 .h1-large {
   color: var(--white-clr);
   margin-bottom: 30px;
@@ -118,11 +126,11 @@ a {
   color: var(--header-border);
 }
 .h1-small {
-  font-family: "DM Serif Display", serif;
+  font-family: "Inter", serif;
   text-align: center;
-  letter-spacing: 1.9px;
-  font-size: 4.7rem;
-  line-height: 5.3rem;
+  font-size: 5.2rem;
+  line-height: 5.5rem;
+  font-weight: 700;
 }
 .heading-2 {
   font-size: 4.2rem;
@@ -156,7 +164,7 @@ a {
   content: "";
   display: flex;
   width: 170px;
-  height: 1px;
+  height: 1.5px;
   top: 110%;
   background: var(--golden-clr);
 }
@@ -185,7 +193,7 @@ a {
   content: "";
   display: flex;
   width: 55%;
-  height: 1px;
+  height: 1.5px;
   top: 110%;
   background: var(--golden-clr);
 }
@@ -202,13 +210,21 @@ a {
 header {
   background-color: var(--dark-black);
 }
-
+/* header {
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 15;
+} */
 .header-logo-mob {
   display: none;
 }
 .header-logo > a > img {
-  width: 145px;
-  height: 145px;
+  width: 170px;
+  height: 120px;
 }
 .header-flexbox {
   padding-top: 10px;
@@ -504,21 +520,24 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: 50% 70%;
 }
 .hero-fg-img {
   position: absolute;
+  content: "";
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  top: 0;
+  background-color: transparent;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.01) 55%,
+    rgba(31, 31, 31, 0.4) 80%,
+    rgba(0, 0, 0, 1) 90%
+  );
   z-index: 5;
-}
-.hero-fg-img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 .hero-section-text {
   position: absolute;
@@ -535,9 +554,10 @@ header {
 }
 
 .hero-section-text p {
+  font-family: "gills-sans-nova-medium", serif;
   margin: 20px 0 25px 0;
-  font-size: 1.8rem;
-  letter-spacing: 1.2px;
+  font-size: 1.65rem;
+  letter-spacing: 1.4px;
   color: var(--golden-clr);
   font-weight: 600;
   text-transform: uppercase;
@@ -553,38 +573,45 @@ header {
 .cta-btn > a {
   font-family: "alliance-light", serif;
   background-color: none;
-  border: 1px solid var(--white-clr);
+  /* border: 1px solid var(--white-clr); */
   display: block;
   height: fit-content;
   width: fit-content;
   line-height: 24px;
   font-weight: 700;
   letter-spacing: 2px;
-  font-size: 1.6rem;
+  font-size: 1.55rem;
   border-radius: 35px;
-  padding: 7px 23px;
+  padding: 6.5px 23px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 17px;
   color: var(--white-clr);
   cursor: pointer;
   transition: all 0.6s ease-in-out;
+  background-color: white;
+  color: #111;
 }
 .cta-btn a > i {
-  background-color: var(--white-clr);
+  /* background-color: var(--white-clr); */
+  color: white;
+  background-color: #111;
   border-radius: 50%;
   padding: 9px 10px;
-  color: var(--dark-black);
+  /* color: var(--dark-black); */
   font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
 }
 .cta-btn > a:hover {
-  background-color: var(--white-clr);
-  border: 1px solid transparent;
-  color: var(--dark-black);
+  background-color: #111;
+  color: white;
 }
-
+.cta-btn > a:hover i {
+  background-color: white;
+  color: #111;
+}
 /* ------------ Brands Section ------------- */
 .brands-section {
   max-width: 1200px;
@@ -655,7 +682,10 @@ header {
 /* Chauffeuring Home Page Section, Chauffeuring Chauffeuring Page Section  */
 /* -------------- Chauffeuring Section -------------  */
 .chauffeuring-section {
-  margin: 150px auto;
+  padding: 100px 0;
+  background-color: white;
+  background-color: #f7f7f7;
+  margin-top: 80px;
 }
 
 .chauffeuring-section-flex {
@@ -671,9 +701,11 @@ header {
   object-position: center;
   border-radius: 5px;
 }
-
+.chauffeuring-section-flex h3 {
+  color: #111;
+}
 .chauffeuring-section-flex > div p {
-  color: var(--white-clr);
+  color: #111;
   font-size: 1.7rem;
   line-height: 2.4rem;
   letter-spacing: 1.3px;
@@ -683,24 +715,26 @@ header {
 /* ----------- Services Section ------------- */
 .services-section {
   width: 100%;
-  height: 630px;
+  padding: 110px 0;
+  background-color: black;
+  background-color: #ebf1f5;
 }
 .services-section.swiper {
   position: relative !important;
-  height: 630px;
+  height: 610px;
 }
 .services-section-slide {
   width: 100%;
-  height: 630px;
+  height: 610px;
   position: relative !important;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .services-section-slide > img {
   width: 100%;
-  height: 630px;
+  height: 610px;
   object-fit: cover;
   object-position: center;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .services-section-slide::after {
@@ -713,6 +747,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
+  border-radius: 20px;
 }
 
 .services-section-slide-content {
@@ -796,8 +831,8 @@ header {
 /*------------ Call Us At Section --------------*/
 .call-us-at-section {
   width: 100%;
-  background-color: var(--dark-gray);
-  margin: 100px auto;
+  background-color: #111;
+  margin: 0 auto 0 auto;
 }
 .call-us-at-section-grid {
   display: grid;
@@ -870,7 +905,7 @@ header {
 /* ------------ Hiring Steps Section Homepage ------------ */
 /* ----------Steps Section--------- */
 .steps-section {
-  margin: 150px auto;
+  margin: 0 auto 0 auto;
   background-image: url("../assets/pics/50.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -924,7 +959,7 @@ header {
 
 .social-media-section-grid-flex {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 7px;
   grid-column-gap: 7px;
 }
@@ -937,7 +972,7 @@ header {
   width: 100%;
   height: 100%;
   z-index: 10;
-  height: 250px;
+  height: 220px;
   position: relative;
 }
 .social-media-section-grid-flex-item div::before {
@@ -945,10 +980,10 @@ header {
   position: absolute;
   background: rgb(0, 0, 0);
   background: linear-gradient(
-    -150deg,
-    rgba(0, 0, 0, 0) 10%,
-    rgba(31, 31, 31, 0.4) 59%,
-    rgba(0, 0, 0, 1) 99%
+    -180deg,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(31, 31, 31, 0.5) 80%,
+    rgba(0, 0, 0, 0.8) 90%
   );
   left: 0;
   right: 0;
@@ -963,19 +998,47 @@ header {
   background-size: cover;
   border-radius: 4px;
 }
-.social-media-section-grid-flex-item:last-of-type {
-  background-image: url("../assets/pics/17.jpg");
+.social-media-section-grid-flex-item:nth-of-type(2) {
+  background-image: url("../assets/pics/72.jpg");
   background-position: 50% 70%;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 4px;
 }
+.social-media-section-grid-flex-item:nth-of-type(3) {
+  background-image: url("../assets/pics/75.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+}
+.social-media-section-grid-flex-item:nth-of-type(4) {
+  background-image: url("../assets/pics/76.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+}
+.social-media-section-grid-flex-item:nth-of-type(5) {
+  background-image: url("../assets/pics/78.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+}
+.social-media-section-grid-flex-item:nth-of-type(6) {
+  background-image: url("../assets/pics/77.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+}
 .social-media-section-grid-flex-item img {
-  width: 53px;
+  width: 65px;
 }
 .social-media-section-grid-flex-item h6 {
-  font-size: 1.8rem;
-  margin: 10px 0 30px 0;
+  font-size: 1.6rem;
+  margin: 0 0 20px 0;
   letter-spacing: 1.5px;
 }
 .social-media-section-grid-flex-item a {
@@ -984,20 +1047,25 @@ header {
   margin: 10px 0;
   letter-spacing: 1.5px;
   display: block;
-  color: white;
-  border: 1.5px solid var(--white-clr);
-  padding: 8px 24px;
-  border-radius: 13px;
+  padding: 9px 24px;
+  border-radius: 5px;
   transition: all 0.4s ease-in-out;
+  font-family: "gills-sans-nova-medium", serif;
+  background: white;
+  color: #111;
 }
 .social-media-section-grid-flex-item a:hover {
-  background-color: var(--header-bg);
+  color: #111;
+  background-color: var(--golden-clr);
 }
 /* ------------- Cover Area Section -------------- */
 .cover-area-section {
-  margin: 100px auto;
+  padding: 100px 0;
+  background-color: #f7f7f7;
 }
-
+.cover-area-section .heading-5 {
+  color: #111;
+}
 .cover-area-section-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1028,8 +1096,8 @@ header {
   background-color: var(--golden-clr);
 }
 .cover-area-section-grid-item {
-  border-radius: 3px;
   position: relative;
+  border-radius: 5px;
 }
 .cover-area-section-grid-item::before {
   content: "";
@@ -1045,6 +1113,7 @@ header {
     rgba(31, 31, 31, 0.4) 59%,
     rgba(0, 0, 0, 1) 99%
   );
+  border-radius: 5px;
 }
 .cover-area-section-grid-item div {
   position: absolute;
@@ -1057,12 +1126,15 @@ header {
   height: 100%;
   width: 100%;
   height: 260px;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 /* ------------ Why Choose Us Section ----------- */
 /*------------ Values Section--------------- */
 .values-section {
-  margin: 0 auto 0 auto;
+  /* background-color: #ebf1f5; */
+  background-color: white;
+  /* background-color: #f7f7f7; */
+  padding: 100px 0;
 }
 
 .values-section-top-flex {
@@ -1072,10 +1144,13 @@ header {
   align-items: flex-start;
   column-gap: 20px;
 }
-
+.values-section-top-flex .heading-5 {
+  color: black;
+}
 .values-section-top-flex p {
   margin: 20px 0 0 0;
   width: 80%;
+  color: #111;
 }
 
 .values-section-bottom-grid {
@@ -1091,11 +1166,12 @@ header {
 .values-section-bottom-grid div h6 {
   margin: 18px 0 8px 0;
   font-size: 1.8rem;
+  color: black;
 }
 
 .values-section-bottom-grid div p {
   padding-right: 15px;
-  color: var(--light-gray);
+  color: #111;
 }
 .cta-btn-style-2 {
   display: block;
@@ -1106,7 +1182,7 @@ header {
 }
 .cta-btn-style-2 a {
   display: block;
-  color: white;
+  color: #111;
   font-size: 1.8rem;
   transition: all 0.5s ease-in-out;
   width: max-content;
@@ -1156,7 +1232,7 @@ header {
 /* --------- Car Features Section in All Car Pages ------ */
 /* -------Car Features Section----------- */
 .car-features-section {
-  margin: 120px auto 0 auto;
+  margin: 120px auto 80px auto;
 }
 
 .car-features-section-grid {
@@ -1212,13 +1288,7 @@ header {
 .gallery-section {
   padding: 80px 0 80px 0;
   margin: 80px auto 0 auto;
-  background-color: var(--dark-gray);
-}
-.gallery-section h2 {
-  font-size: 3.3rem;
-  margin-bottom: 25px;
-  text-align: center;
-  text-transform: uppercase;
+  background-color: #f7f7f7;
 }
 
 .gallery-collection {
@@ -1266,9 +1336,10 @@ header {
   font-weight: 600;
   transition: all 0.3s ease-in;
   font-size: 1.9rem;
+  color: black;
 }
 .overlay .gallery-collection-card-carName > h5 > i {
-  color: var(--golden-clr);
+  color: var(--dark-gray);
   font-size: 2rem;
   margin-right: 10px;
 }
@@ -1303,10 +1374,10 @@ header {
   color: var(--light-gray);
   margin-right: 8px;
   font-size: 1.8rem;
-  color: white;
+  color: #1f1f1f;
 }
 .gallery-collection-card-carDes div span {
-  color: var(--light-gray);
+  color: #111;
 }
 .overlay::after {
   position: absolute;
@@ -1314,7 +1385,7 @@ header {
   display: flex;
   width: 0;
   height: 1.5px;
-  top: 99%;
+  bottom: 0;
   background: var(--golden-clr);
   transition: width 0.3s;
 }
@@ -1324,7 +1395,7 @@ header {
   transform: translateX(0);
   font-weight: 600;
 }
-.gallery-collection-card:hover
+/* .gallery-collection-card:hover
   .overlay
   .gallery-collection-card-carName
   > span {
@@ -1332,10 +1403,14 @@ header {
   border: 1.5px solid var(--golden-clr);
   background-color: transparent;
   color: white;
-}
+} */
 .gallery-collection-card:hover .overlay::after {
   width: 100%;
   transition: width 0.3s ease-in-out;
+}
+.gallery-collection-card:hover .overlay {
+  border: transparent;
+  transition: all 0.1s ease-in-out;
 }
 .gallery-collection-card:hover img {
   transition: all 0.3s ease-in-out;
@@ -1366,16 +1441,21 @@ header {
   font-size: 1.4rem;
   border-radius: 3px;
   font-family: "alliance-text", sans-serif;
-  background-color: black;
+  background-color: var(--golden-clr);
 }
 .gallery-collection-card-btns button a:hover {
-  background-color: var(--golden-clr);
-  color: var(--dark-gray);
+  background-color: #111;
+  color: white;
 }
 /* ---------Airport Chauffeur Services Page -------- */
 /* ---------- London Airports Section ----------- */
 .london-airports-section {
-  margin: 80px auto 140px auto;
+  /* margin: 80px auto 140px auto; */
+  padding: 80px 0;
+  background-color: white;
+}
+.london-airports-section .heading-5 {
+  color: black;
 }
 
 .london-airports-section div p {
@@ -1383,9 +1463,8 @@ header {
   font-family: "alliance-light", sans-serif;
   font-weight: 500;
   letter-spacing: 1.7px;
-  color: white;
+  color: #111;
   line-height: 24px;
-  color: var(--light-gray);
   text-align: justify;
 }
 .london-airports-section div table {
@@ -1408,7 +1487,9 @@ header {
   font-size: 1.5rem;
 }
 /* ---------Extra Services Section--------- */
-
+.extra-services-section {
+  margin-top: 80px;
+}
 .extra-services-section-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1495,6 +1576,13 @@ header {
   color: var(--dark-black);
 }
 /* ---------- Featured Services Section ----------- */
+.featured-services-section {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+}
+.featured-services-section .heading-5 {
+  color: black;
+}
 .featured-services-section-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1522,6 +1610,7 @@ header {
     rgba(31, 31, 31, 0.7) 80%,
     rgba(0, 0, 0, 0.9332983193277311) 90%
   );
+  border-radius: 4px;
 }
 .featured-services-section-grid-item div img {
   height: 270px;
@@ -1561,11 +1650,11 @@ header {
 .featured-services-section-grid-item p {
   font-size: 1.45rem;
   font-family: "alliance-light", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 1.4px;
-  color: white;
+  color: var(--dark-gray);
   line-height: 22px;
-  padding: 20px 15px 10px 10px;
+  padding: 15px 15px 10px 10px;
   text-align: left !important;
 }
 /* Services Text Section in Event Chauffeur Service Page, Business Chauffeur Service Page, Airport Chauffeur Service Page, Personal Chauffeur Service Page */
@@ -1584,24 +1673,6 @@ header {
   color: var(--light-gray);
 }
 
-/* -----Modification in LR Split Section For Business & Corporate Chauffeur Service, Airport Chauffeur Service, Personal Chauffeur Service, Event Chauffeur Service Pages ------*/
-.services-section-hero-fg {
-  position: relative;
-}
-.services-section-hero-fg::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../assets/pics/Design\ 7.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 /* -----Hero Section of Chauffeur page, About Page , All Services Pages  ------*/
 /* ------RL Split Section ---------*/
 
@@ -1760,13 +1831,12 @@ header {
 /* ----- About Page ----- */
 /* --------About Text Section--------- */
 .about-text-section {
-  margin: 80px auto 40px auto;
+  margin-top: 70px;
 }
 
 .about-text-section div p {
   margin-bottom: 10px;
   line-height: 25px;
-  color: var(--light-gray);
   font-size: 1.6rem;
 }
 
@@ -1776,7 +1846,8 @@ header {
 /* ------- Text Half Section in About Page , Personal Chauffeur Page --------- */
 /* -----------Text Half Section------------ */
 .text-half-section {
-  margin: 0 auto 100px auto;
+  padding: 100px 0;
+  background-color: #f7f7f7;
 }
 .text-half-section-grid {
   display: grid;
@@ -1891,9 +1962,9 @@ header {
   background: rgb(0, 0, 0);
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.3) 10%,
-    rgba(31, 31, 31, 0.5) 29%,
-    rgba(0, 0, 0, 1) 94%
+    rgba(0, 0, 0, 0.2) 3%,
+    rgba(31, 31, 31, 0.5) 50%,
+    rgba(0, 0, 0, 1) 90%
   );
 }
 .top-section > div > div {
@@ -2092,7 +2163,7 @@ header {
 }
 
 .contact-section-grid-right div {
-  background-color: var(--light-gray);
+  background-color: #f7f7f7;
   margin-bottom: 15px;
   padding: 25px;
   border-radius: 4px;
@@ -2134,8 +2205,8 @@ header {
   font-weight: 600;
   letter-spacing: 1.5px;
   font-size: 1.2rem;
-  border-radius: 35px;
-  padding: 6px 18px;
+  border-radius: 5px;
+  padding: 6px 23px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2155,7 +2226,8 @@ header {
 /* --------------Footer-------------- */
 footer {
   width: 100%;
-  background-color: var(--dark-gray);
+
+  background-color: #111;
   margin: 100px auto 0 auto;
 }
 
@@ -2167,12 +2239,15 @@ footer {
 }
 
 .footer-top-left {
-  border-right: 2px solid var(--light-gray);
+  border-right: 0.5px solid #a6a6a6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .footer-top-left img {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto;
+  width: 170px;
+  height: 120px;
 }
 .footer-top-right {
   display: grid;
@@ -2180,14 +2255,15 @@ footer {
   padding: 10px 0;
 }
 
-.footer-top-right-nav span {
+.footer-top-right-nav span,
+.footer-top-right-nav-right span {
   font-size: 1.7rem;
   font-weight: 700;
   line-height: 22px;
   color: var(--white-clr);
   display: block;
   margin-bottom: 15px;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.8px;
   color: var(--golden-clr);
 }
 
@@ -2198,44 +2274,54 @@ footer {
 
 .footer-top-right-nav nav a {
   color: var(--white-clr);
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 1px;
+  line-height: 25px;
+  letter-spacing: 1.3px;
   width: fit-content;
+}
+.footer-top-right-nav-right nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: fit-content;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
 }
 .footer-top-right-nav nav a:hover {
   color: var(--golden-clr);
 }
 
-.footer-top-right-nav:last-of-type nav {
-  flex-direction: row;
-  column-gap: 10px;
-}
-.footer-top-right-nav:last-of-type > nav > a {
-  width: 40px;
-  height: 37px;
-  background-color: var(--dark-black);
+.footer-top-right-nav-right > nav > a {
+  width: 38px;
+  height: 38px;
+  /* background-color: var(--dark-black); */
+  background-color: #a6a6a6;
+  background-color: #f7f7f7;
+  /* background-color: #ebf1f5; */
+  color: #111;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  color: var(--light-gray);
+  border-radius: 4px;
+  /* color: var(--light-gray); */
+  font-size: 1.8rem;
 }
-.footer-top-right-nav:last-of-type > nav > a:hover {
+.footer-top-right-nav-right > nav > a:hover {
   background-color: var(--golden-clr);
+  color: #111;
 }
 .footer-bottom {
-  background-color: var(--dark-black);
+  background-color: #111;
   width: 100%;
 }
 .footer-bottom > div {
   text-align: center;
-  padding: 16px 0;
+  padding: 18px 0;
   font-family: "alliance-regular";
-  font-size: 1.4rem;
-  color: var(--light-gray);
+  font-size: 1.3rem;
+  border-top: 0.5px solid #a6a6a6;
+  color: #a6a6a6;
 }
 
 /*--------------- Booking Page -------------- */

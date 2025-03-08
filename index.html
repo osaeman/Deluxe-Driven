@@ -34,9 +34,11 @@
     <!-- Font Awesome Icon -->
     <link
       rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"
     />
 
     <link rel="stylesheet" href="./style/style.css" />
@@ -131,13 +133,13 @@
           </nav>
           <button>
             <a href="./pages/booking.html">
-              Book Now <i class="fal fa-arrow-right"></i
+              Book Now <i class="fa-solid fa-arrow-right"></i
             ></a>
           </button>
         </div>
 
         <div class="hamburger-btn">
-          <i class="fad fa-bars"></i>
+          <i class="fa-duotone fa-solid fa-bars"></i>
         </div>
       </div>
     </header>
@@ -239,20 +241,21 @@
                 <img src="./assets/pics/1.jpg" alt="Hero Slider Img" />
               </div>
               <div class="swiper-slide heroSwiper-slide">
-                <img src="./assets/pics/4.jpg" alt="Hero Slider Img" />
+                <img
+                  src="./assets/pics/self drive hero img.jpg"
+                  alt="Hero Slider Img"
+                />
               </div>
               <div class="swiper-slide heroSwiper-slide">
-                <img src="./assets/pics/8.jpg" alt="Hero Slider Img" />
+                <img src="./assets/pics/2.jpg" alt="Hero Slider Img" />
               </div>
               <div class="swiper-slide heroSwiper-slide">
-                <img src="./assets/pics/5.jpg" alt="Hero Slider Img" />
+                <img src="./assets/pics/5.png" alt="Hero Slider Img" />
               </div>
             </div>
           </div>
         </div>
-        <div class="hero-fg-img">
-          <img src="./assets/pics/design 3.png" alt="Hero Section Overlay" />
-        </div>
+        <div class="hero-fg-img"></div>
         <div class="hero-section-text">
           <h1 class="h1-small">
             Redefining Luxury
@@ -262,7 +265,7 @@
           <p>Bringing the Mayfair experience to you</p>
           <button class="cta-btn">
             <a href="./pages/booking.html">
-              Get Started <i class="fal fa-arrow-right"></i
+              Get Started <i class="fa-solid fa-arrow-right"></i
             ></a>
           </button>
         </div>
@@ -298,8 +301,7 @@
           <div class="brands-section-flex-item-model">
             <h5>Mercedes</h5>
             <a href="./pages/cars.html"
-              ><span>See All</span> Models
-              <i class="far fa-long-arrow-alt-right"></i
+              ><span>See All</span> Models <i class="fa-solid fa-right-long"></i
             ></a>
           </div>
         </div>
@@ -314,8 +316,7 @@
           <div class="brands-section-flex-item-model">
             <h5>Range Rover</h5>
             <a href="./pages/cars.html">
-              <span>See All</span> Models
-              <i class="far fa-long-arrow-alt-right"></i
+              <span>See All</span> Models <i class="fa-solid fa-right-long"></i
             ></a>
           </div>
         </div>
@@ -330,8 +331,7 @@
           <div class="brands-section-flex-item-model">
             <h5>Rolls Royce</h5>
             <a href="./pages/cars.html"
-              ><span>See All</span> Models
-              <i class="far fa-long-arrow-alt-right"></i
+              ><span>See All</span> Models <i class="fa-solid fa-right-long"></i
             ></a>
           </div>
         </div>
@@ -339,21 +339,24 @@
     </section>
     <!------------ Chauffeuring Home Page Section ------------->
     <!------------ Chauffeuring Section ---------->
-    <section class="chauffeuring-section customize-container">
-      <div class="chauffeuring-section-flex">
+    <section class="chauffeuring-section">
+      <div class="chauffeuring-section-flex customize-container">
         <div>
           <img src="./assets/pics/35.jpg" alt="A black car with a chauffeur" />
         </div>
         <div>
           <h3 class="heading-3">Luxury Chauffeur Service</h3>
           <p>
-            Deluxe Driven provides top-tier chauffeur services across the UK,
-            catering to both business and personal travel, as well as special
-            occasions. Based in London, we are dedicated to delivering a
-            seamless and sophisticated journey, ensuring comfort, reliability,
-            and personalized service tailored to your needs. With a commitment
-            to excellence, Deluxe Driven is your trusted partner for premium
-            travel experiences
+            Deluxe Driven is a premier chauffeur service operating across the
+            UK, catering to business and personal travel, as well as exclusive
+            events. Based in London, we are committed to delivering a seamless,
+            luxurious journey with comfort, reliability, and personalized
+            service.
+          </p>
+          <p>
+            Our professional chauffeurs ensure a refined, stress-free
+            experience, making Deluxe Driven your trusted partner in premium
+            travel.
           </p>
         </div>
       </div>
@@ -551,46 +554,51 @@
           </p>
           <button class="cta-btn-style-1">
             <a href="tel:0203 8888844">
-              Call Us <i class="fal fa-arrow-right"></i
+              Call Us <i class="fa-solid fa-arrow-right"></i
             ></a>
           </button>
         </div>
       </div>
     </section>
     <!------------ Cover Areas Section ------------>
-    <section class="cover-area-section container">
-      <h5 class="heading-5">Areas We Cover</h5>
-      <div class="cover-area-section-grid">
-        <div class="cover-area-section-grid-item">
-          <div>
-            <h4>London</h4>
-            <span> Business & Cultural Hub</span>
-          </div>
+    <section class="cover-area-section">
+      <div class="container">
+        <h5 class="heading-5">Areas We Cover</h5>
+        <div class="cover-area-section-grid">
+          <div class="cover-area-section-grid-item">
+            <div>
+              <h4>London</h4>
+              <span> Business & Cultural Hub</span>
+            </div>
 
-          <img src="./assets/pics/london.jpg" alt="London" />
-        </div>
-        <div class="cover-area-section-grid-item">
-          <div>
-            <h4>Hertfordshire</h4>
-            <span>Historic & Scenic</span>
+            <img src="./assets/pics/london.jpg" alt="London" />
           </div>
-          <img src="./assets/pics/hertfordshire.jpg" alt="Hertfordshire" />
-        </div>
-        <div class="cover-area-section-grid-item">
-          <div>
-            <h4>Bedfordshire</h4>
-            <span>Tranquil Countryside</span>
+          <div class="cover-area-section-grid-item">
+            <div>
+              <h4>Hertfordshire</h4>
+              <span>Historic & Scenic</span>
+            </div>
+            <img src="./assets/pics/hertfordshire.jpg" alt="Hertfordshire" />
           </div>
+          <div class="cover-area-section-grid-item">
+            <div>
+              <h4>Bedfordshire</h4>
+              <span>Tranquil Countryside</span>
+            </div>
 
-          <img src="./assets/pics/bedfordshire.jpg" alt="Bedfordshire" />
-        </div>
-        <div class="cover-area-section-grid-item">
-          <div>
-            <h4>Buckinghamshire</h4>
-            <span>Prestige & Elegance</span>
+            <img src="./assets/pics/bedfordshire.jpg" alt="Bedfordshire" />
           </div>
+          <div class="cover-area-section-grid-item">
+            <div>
+              <h4>Buckinghamshire</h4>
+              <span>Prestige & Elegance</span>
+            </div>
 
-          <img src="./assets/pics/buckhingamshire.jpg" alt="Buckinghamshire" />
+            <img
+              src="./assets/pics/buckhingamshire.jpg"
+              alt="Buckinghamshire"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -633,74 +641,80 @@
     </section>
     <!-------------- Why Choose Us Section -------------->
     <!-----------  Values Section ------------->
-    <section class="values-section container">
-      <div class="values-section-top-flex">
-        <div>
-          <h5 class="heading-5">Why Choose Us?</h5>
-          <p class="para">
-            Seamless travel with professional chauffeurs, fixed pricing, and
-            real time flight tracking.
-          </p>
+    <section class="values-section">
+      <div class="values-section-top container">
+        <div class="values-section-top-flex">
+          <div>
+            <h5 class="heading-5">Why Choose Us?</h5>
+            <p class="para">
+              Seamless travel with professional chauffeurs, fixed pricing, and
+              real time flight tracking.
+            </p>
+          </div>
+          <button class="cta-btn-style-2">
+            <a href="./pages/booking.html"
+              >Start your Journey<i class="fa-solid fa-arrow-right-long"></i
+            ></a>
+          </button>
         </div>
-        <button class="cta-btn-style-2">
-          <a href="./pages/booking.html"
-            >Start your Journey<i class="far fa-chevron-right"></i
-          ></a>
-        </button>
-      </div>
-      <div class="values-section-bottom-grid">
-        <div>
-          <h6>Licensed & Professional Chauffeurs</h6>
-          <p>
-            All our chauffeurs are fully licensed with the local authority and
-            have undergone enhanced DBS checks, ensuring the highest standards
-            of safety, professionalism, and reliability. At Deluxe Driven, we
-            are committed to providing a secure and trustworthy service for all
-            our clients.
-          </p>
-        </div>
-        <div>
-          <h6>Punctual & Hassle Free Service</h6>
-          <p>
-            Enjoy complimentary waiting time 60 minutes at airports, 15 minutes
-            elsewhere ensuring a seamless, delay free journey.
-          </p>
-        </div>
-        <div>
-          <h6>24/7 Customer Service</h6>
-          <p>
-            Our 24/7 customer support is always available to assist with queries
-            and instantly book rides.
-          </p>
-        </div>
-        <div>
-          <h6>Comfortable Vehicles</h6>
-          <p>
-            Premium, Safe, and Fully Licensed Chauffeurs Vehicles-Clean,
-            Comfortable, and Well-Maintained.
-          </p>
-        </div>
-        <div>
-          <h6>Seamless & Happy Travel</h6>
-          <p>
-            Enjoy a seamless journey with onboard WiFi, bottled water, chargers,
-            child seats, and air conditioning.
-          </p>
-        </div>
-        <div>
-          <h6>Privacy Policy</h6>
-          <p>
-            Our chauffeurs have signed non disclosure agreements (NDAs) to
-            guarantee complete privacy and confidentiality for our clients.
-          </p>
-        </div>
-        <div>
-          <h6>Fixed Price</h6>
-          <p>Transparent and fixed pricing with no hidden fees or surprises.</p>
-        </div>
-        <div>
-          <h6>Flight Monitoring</h6>
-          <p>Enjoy hassle free journeys with our real time flight tracking.</p>
+        <div class="values-section-bottom-grid">
+          <div>
+            <h6>Licensed & Professional Chauffeurs</h6>
+            <p>
+              All our chauffeurs are fully licensed with the local authority and
+              have undergone enhanced DBS checks, ensuring the highest standards
+              of safety, professionalism, and reliability. At Deluxe Driven, we
+              are committed to providing a secure and trustworthy service for
+              all our clients.
+            </p>
+          </div>
+          <div>
+            <h6>Punctual & Hassle Free Service</h6>
+            <p>
+              Enjoy complimentary waiting time 60 minutes at airports, 15
+              minutes elsewhere ensuring a seamless, delay free journey.
+            </p>
+          </div>
+          <div>
+            <h6>24/7 Customer Service</h6>
+            <p>
+              Our 24/7 customer support is always available to assist with
+              queries and instantly book rides.
+            </p>
+          </div>
+          <div>
+            <h6>Comfortable Vehicles</h6>
+            <p>
+              Premium, Safe, and Fully Licensed Chauffeurs Vehicles-Clean,
+              Comfortable, and Well-Maintained.
+            </p>
+          </div>
+          <div>
+            <h6>Seamless & Happy Travel</h6>
+            <p>
+              Enjoy a seamless journey with onboard WiFi, bottled water,
+              chargers, child seats, and air conditioning.
+            </p>
+          </div>
+          <div>
+            <h6>Privacy Policy</h6>
+            <p>
+              Our chauffeurs have signed non disclosure agreements (NDAs) to
+              guarantee complete privacy and confidentiality for our clients.
+            </p>
+          </div>
+          <div>
+            <h6>Fixed Price</h6>
+            <p>
+              Transparent and fixed pricing with no hidden fees or surprises.
+            </p>
+          </div>
+          <div>
+            <h6>Flight Monitoring</h6>
+            <p>
+              Enjoy hassle free journeys with our real time flight tracking.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -712,7 +726,7 @@
           <div class="social-media-section-grid-flex-item">
             <div>
               <img
-                src="./assets/pics/instagram.png"
+                src="./assets/pics/instagram logo.svg"
                 alt="Mercedes Benz Interior Pic"
               />
               <h6>Instagram</h6>
@@ -726,12 +740,62 @@
           </div>
           <div class="social-media-section-grid-flex-item">
             <div>
-              <img src="./assets/pics/facebook.png" alt="Range Rover" />
+              <img src="./assets/pics/facebook logo.svg" alt="Range Rover" />
               <h6>Facebook</h6>
               <a
                 href="https://www.facebook.com/share/1F3CXhGUqa/?mibextid=wwXIfr"
                 >Follow Us</a
               >
+            </div>
+          </div>
+          <div class="social-media-section-grid-flex-item">
+            <div>
+              <img
+                src="./assets/pics/linked in logo.svg"
+                alt="Mercedes Benz Interior Pic"
+              />
+              <h6>Linked In</h6>
+
+              <a href="https://www.linkedin.com/company/deluxe-driven/">
+                Follow Us</a
+              >
+            </div>
+          </div>
+          <div class="social-media-section-grid-flex-item">
+            <div>
+              <img
+                src="./assets/pics/tiktok logo.svg"
+                alt="Mercedes Benz Interior Pic"
+              />
+              <h6>Tiktok</h6>
+
+              <a
+                href="https://www.tiktok.com/@deluxedriven?_t=ZN-8uUZ5Chn1Zm&_r=1"
+              >
+                Follow Us</a
+              >
+            </div>
+          </div>
+          <div class="social-media-section-grid-flex-item">
+            <div>
+              <img
+                src="./assets/pics/snapchat logo.svg"
+                alt="Mercedes Benz Interior Pic"
+              />
+              <h6>Snapchat</h6>
+
+              <a href="https://snapchat.com/t/1RJjyVi9"> Follow Us</a>
+            </div>
+          </div>
+          <div class="social-media-section-grid-flex-item">
+            <div>
+              <img
+                src="./assets/pics/twitter logo.svg"
+                alt="Mercedes Benz Interior Pic"
+              />
+              <h6>Twitter</h6>
+
+              <a href="https://x.com/deluxedriven?s=11"> Follow Us</a>
             </div>
           </div>
         </div>
@@ -766,7 +830,7 @@
               <a href="./pages/clientsafetynotice.html">Client Safety Notice</a>
             </nav>
           </div>
-          <div class="footer-top-right-nav">
+          <div class="footer-top-right-nav-right">
             <span>Follow Us</span>
             <nav>
               <a
@@ -776,6 +840,19 @@
               <a
                 href="https://www.instagram.com/deluxedriven/profilecard/?igsh=dG41b2V4Z2kxMWIw"
                 ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/company/deluxe-driven/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@deluxedriven?_t=ZN-8uUZ5Chn1Zm&_r=1"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a href="https://snapchat.com/t/1RJjyVi9"
+                ><i class="fab fa-snapchat-ghost"></i
+              ></a>
+              <a href="https://x.com/deluxedriven?s=11"
+                ><i class="fa-brands fa-x-twitter"></i
               ></a>
             </nav>
           </div>
