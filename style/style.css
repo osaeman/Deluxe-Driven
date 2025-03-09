@@ -146,8 +146,8 @@ a {
   content: "";
   display: flex;
   width: 45%;
-  height: 1px;
-  top: 110%;
+  height: 1.5px;
+  top: 109%;
   background: var(--golden-clr);
 }
 .heading-3 {
@@ -165,7 +165,7 @@ a {
   display: flex;
   width: 170px;
   height: 1.5px;
-  top: 110%;
+  top: 109%;
   background: var(--golden-clr);
 }
 
@@ -194,7 +194,7 @@ a {
   display: flex;
   width: 55%;
   height: 1.5px;
-  top: 110%;
+  top: 109%;
   background: var(--golden-clr);
 }
 .para {
@@ -838,7 +838,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 50px;
-  padding: 45px 0;
+  padding: 35px 0 0 0;
 }
 .call-us-at-section-left {
   grid-column: 1 / span 1;
@@ -858,28 +858,33 @@ header {
 .call-us-at-section-right h5 {
   font-size: 2.7rem;
   font-weight: 700;
-  color: var(--light-gray);
   color: var(--golden-clr);
   margin-bottom: 16px;
 }
 .call-us-at-section-right h6 {
-  font-size: 1.6rem;
-  color: white;
+  font-size: 1.64rem;
   margin-bottom: 6px;
   font-family: "Inter", serif;
+  font-weight: 300;
+  color: #959595;
+}
+.call-us-at-section-right h6 span {
+  color: #f7f7f7;
   font-weight: 400;
 }
-.call-us-at-section-right p {
+/* .call-us-at-section-right p {
   font-size: 1.5rem;
   font-weight: 400;
   color: var(--light-gray);
   margin: 10px 0 20px 0;
-}
+  color: #959595;
+} */
 .cta-btn-style-1 {
   outline: none;
   background: none;
   border: none;
   display: block;
+  margin-top: 15px;
 }
 
 .cta-btn-style-1 a {
@@ -888,19 +893,21 @@ header {
   letter-spacing: 1.7px;
   font-weight: 800;
   display: block;
-  color: var(--grey-shade-light);
+  color: #111;
   cursor: pointer;
-  transition: all 0.4s ease-in-out;
-  background-color: white;
+  background-color: #f7f7f7;
   text-transform: uppercase;
   border-radius: 3px;
+  border: 1px solid transparent;
+  transition: all 0.4s ease-in-out;
 }
 .cta-btn-style-1 a i {
   margin-left: 8px;
 }
 .cta-btn-style-1 a:hover {
-  background-color: var(--header-border);
+  background-color: transparent;
   color: white;
+  border: 1px solid white;
 }
 /* ------------ Hiring Steps Section Homepage ------------ */
 /* ----------Steps Section--------- */
@@ -1578,7 +1585,7 @@ header {
 /* ---------- Featured Services Section ----------- */
 .featured-services-section {
   background-color: #f7f7f7;
-  padding: 100px 0;
+  padding: 85px 0;
 }
 .featured-services-section .heading-5 {
   color: black;
@@ -1831,7 +1838,7 @@ header {
 /* ----- About Page ----- */
 /* --------About Text Section--------- */
 .about-text-section {
-  margin-top: 70px;
+  margin: 100px auto;
 }
 
 .about-text-section div p {
