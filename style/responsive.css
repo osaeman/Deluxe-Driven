@@ -200,9 +200,9 @@
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.2) 10%,
-      rgba(31, 31, 31, 0.4) 29%,
-      rgba(0, 0, 0, 1) 94%
+      rgba(0, 0, 0, 0.05) 10%,
+      rgba(31, 31, 31, 0.4) 60%,
+      rgba(0, 0, 0, 1) 90%
     );
   }
   .cta-btn > a {
@@ -264,12 +264,22 @@
     height: 560px;
   }
   .call-us-at-section-right h5 {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
   .call-us-at-section-right h6 {
     font-size: 1.5rem;
   }
+  .call-us-at-section-grid {
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 20px;
+  }
+  .call-us-at-section-left {
+    grid-column: 1;
+  }
 
+  .call-us-at-section-right {
+    grid-column: 2;
+  }
   .cover-area-section-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
@@ -422,7 +432,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    min-height: 550px;
+    min-height: 530px;
     width: 100%;
   }
   .RL-split-section-grid-left > div {
@@ -431,7 +441,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 85px;
   }
   .RL-split-section-grid-left > div h1,
   .RL-split-section-grid-left > div p {
@@ -451,18 +461,18 @@
     background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.2) 10%,
-      rgba(31, 31, 31, 0.4) 29%,
-      rgba(0, 0, 0, 1) 94%
+      rgba(0, 0, 0, 0.1) 35%,
+      rgba(31, 31, 31, 0.55) 50%,
+      rgba(0, 0, 0, 1) 92%
     );
   }
   .RL-split-section-grid-left p {
     margin: 15px 0 25px 0;
   }
   .RL-split-section-grid-left div > div > p {
-    line-height: 23px;
+    line-height: 20px;
     font-size: 1.5rem;
-    margin: 15px 0 25px 0;
+    margin: 21px 0 25px 0;
   }
   .RL-split-section-grid-left p span {
     display: none;
@@ -491,7 +501,7 @@
     background-image: url("../assets/pics/60.jpg");
   }
   .RL-split-section-grid-left-airport {
-    background-image: url("../assets/pics/40.jpg");
+    background-image: url("../assets/pics/airport\ cahuffeur\ pic.png");
   }
   .RL-split-section-grid-left-about {
     background-image: url("../assets/pics/48.jpg");
@@ -802,21 +812,19 @@
     text-align: center;
   }
   .cta-btn-style-1 {
-    margin: 0 auto;
+    margin: 16px auto 0 auto;
   }
   .call-us-at-section-grid {
     display: flex;
     flex-direction: column;
-    column-gap: 0;
-    padding: 5px 0 35px 0;
+    grid-column-gap: 0;
+    padding: 0 0 34px 0;
   }
   .call-us-at-section-left img {
     width: 300px;
+    object-fit: cover;
   }
-  .cta-btn-style-1 a {
-    padding: 8px 20px;
-    font-size: 1.3rem;
-  }
+
   .steps-section-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -985,6 +993,9 @@
   .featured-services-section {
     padding: 60px 0;
   }
+  .RL-split-section-grid-left {
+    min-height: 475px;
+  }
   /* -------------Airport Chauffeur Page------------- */
 
   .london-airports-section div table {
@@ -1022,6 +1033,7 @@
   .RL-split-section .cta-btn-style-1 {
     margin: 0 0;
   }
+
   .about-text-section div p {
     text-align: left;
     font-size: 1.5rem;
@@ -1187,9 +1199,7 @@
   .services-section-slide > img {
     height: 365px;
   }
-  .call-us-at-section-grid {
-    padding: 0 0 25px 0;
-  }
+
   .call-us-at-section-right h5 {
     font-size: 2rem;
     text-align: center;
@@ -1205,8 +1215,14 @@
     font-size: 1.35rem;
     text-align: center;
   }
-  .cta-btn-style-1 {
+  /* .cta-btn-style-1 {
     margin: 0 auto;
+  } */
+  .cta-btn-style-1 a {
+    padding: 9px 16px;
+    font-size: 1.25rem;
+    letter-spacing: 1.5px;
+    font-weight: 800;
   }
   .cover-area-section-grid {
     grid-template-columns: repeat(1, 1fr);

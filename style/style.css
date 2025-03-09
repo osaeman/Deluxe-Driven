@@ -147,7 +147,7 @@ a {
   display: flex;
   width: 45%;
   height: 1.5px;
-  top: 109%;
+  top: 107%;
   background: var(--golden-clr);
 }
 .heading-3 {
@@ -837,8 +837,8 @@ header {
 .call-us-at-section-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 50px;
-  padding: 35px 0 0 0;
+  grid-column-gap: 50px;
+  padding: 27px 0 27px 0;
 }
 .call-us-at-section-left {
   grid-column: 1 / span 1;
@@ -847,16 +847,22 @@ header {
   align-items: center;
   justify-content: center;
 }
+.call-us-at-section-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
 .call-us-at-section-right {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
   grid-column: 2 / span 2;
 }
 .call-us-at-section-right h5 {
-  font-size: 2.7rem;
+  font-size: 2.55rem;
   font-weight: 700;
   color: var(--golden-clr);
   margin-bottom: 16px;
@@ -888,10 +894,11 @@ header {
 }
 
 .cta-btn-style-1 a {
-  padding: 10px 23px;
-  font-size: 1.4rem;
+  padding: 9.5px 19px;
+  font-size: 1.3rem;
   letter-spacing: 1.7px;
-  font-weight: 800;
+  font-family: "alliance-regular", sans-serif;
+  font-weight: 600;
   display: block;
   color: #111;
   cursor: pointer;
@@ -1962,15 +1969,12 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: transparent;
-  /* background-image: linear-gradient(180deg, #000000 73%, #000000 100%);
-  opacity: 0.3; */
   background: rgb(0, 0, 0);
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.2) 3%,
-    rgba(31, 31, 31, 0.5) 50%,
-    rgba(0, 0, 0, 1) 90%
+    rgba(0, 0, 0, 0.1) 10%,
+    rgba(31, 31, 31, 0.4) 58%,
+    rgba(0, 0, 0, 1) 92%
   );
 }
 .top-section > div > div {
