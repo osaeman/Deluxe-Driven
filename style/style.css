@@ -210,15 +210,7 @@ a {
 header {
   background-color: var(--dark-black);
 }
-/* header {
-  backdrop-filter: blur(20px);
-  background-color: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 15;
-} */
+
 .header-logo-mob {
   display: none;
 }
@@ -573,7 +565,6 @@ header {
 .cta-btn > a {
   font-family: "alliance-light", serif;
   background-color: none;
-  /* border: 1px solid var(--white-clr); */
   display: block;
   height: fit-content;
   width: fit-content;
@@ -878,13 +869,7 @@ header {
   color: #f7f7f7;
   font-weight: 400;
 }
-/* .call-us-at-section-right p {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: var(--light-gray);
-  margin: 10px 0 20px 0;
-  color: #959595;
-} */
+
 .cta-btn-style-1 {
   outline: none;
   background: none;
@@ -1408,15 +1393,7 @@ header {
   transform: translateX(0);
   font-weight: 600;
 }
-/* .gallery-collection-card:hover
-  .overlay
-  .gallery-collection-card-carName
-  > span {
-  transition: border 0.4s ease-in;
-  border: 1.5px solid var(--golden-clr);
-  background-color: transparent;
-  color: white;
-} */
+
 .gallery-collection-card:hover .overlay::after {
   width: 100%;
   transition: width 0.3s ease-in-out;
@@ -1463,7 +1440,6 @@ header {
 /* ---------Airport Chauffeur Services Page -------- */
 /* ---------- London Airports Section ----------- */
 .london-airports-section {
-  /* margin: 80px auto 140px auto; */
   padding: 80px 0;
   background-color: white;
 }
@@ -2304,17 +2280,13 @@ footer {
 .footer-top-right-nav-right > nav > a {
   width: 38px;
   height: 38px;
-  /* background-color: var(--dark-black); */
-  background-color: #a6a6a6;
   background-color: #f7f7f7;
-  /* background-color: #ebf1f5; */
   color: #111;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  /* color: var(--light-gray); */
   font-size: 1.8rem;
 }
 .footer-top-right-nav-right > nav > a:hover {
