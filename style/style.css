@@ -2212,7 +2212,6 @@ header {
 /* --------------Footer-------------- */
 footer {
   width: 100%;
-
   background-color: #111;
   margin: 100px auto 0 auto;
 }
@@ -2305,7 +2304,16 @@ footer {
   border-top: 0.5px solid #a6a6a6;
   color: #a6a6a6;
 }
-
+.footer-bottom span b {
+  font-size: 2rem;
+}
+.footer-bottom div > span {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.footer-bottom div p > b {
+  color: white;
+}
 /*--------------- Booking Page -------------- */
 /* ----- Booking Form ------ */
 .booking-form div {

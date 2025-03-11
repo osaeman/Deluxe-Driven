@@ -894,7 +894,12 @@
   .footer-top-right > .footer-top-right-nav-right span {
     text-align: right;
   }
-
+  .footer-bottom span b {
+    font-size: 1.8rem;
+  }
+  .footer-bottom div > span {
+    font-size: 1.4rem;
+  }
   /* -------------- Contact Page----------------- */
   .top-section div > span {
     font-size: 1.2rem;
